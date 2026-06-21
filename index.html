@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jour Fixe DGB 2026 – Linkliste</title>
+  <!-- Inline-Favicon: kleines Bücherregal-Emoji als SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
   <style>
     /* ── Grundlayout ── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -57,14 +59,27 @@
     /* ── Suchfeld ── */
     .search-wrap {
       background: #1a3a5c;
-      padding: 0 1.5rem 1.5rem;
+      padding: 0 1.5rem 1.75rem;
+    }
+    .search-inner {
+      position: relative;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    /* Lupe-Icon links im Suchfeld */
+    .search-inner::before {
+      content: '🔍';
+      position: absolute;
+      left: 0.85rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 0.9rem;
+      pointer-events: none;
     }
     #suche {
       display: block;
       width: 100%;
-      max-width: 640px;
-      margin: 0 auto;
-      padding: 0.75rem 1rem;
+      padding: 0.8rem 1rem 0.8rem 2.5rem;
       font-size: 1rem;
       border: none;
       border-radius: 8px;
@@ -76,7 +91,7 @@
     #suche:focus {
       box-shadow: 0 0 0 3px #5b9bd5;
     }
-    #suche::placeholder { color: #888; }
+    #suche::placeholder { color: #999; }
 
     /* ── Hauptbereich ── */
     main {
@@ -257,11 +272,29 @@
       line-height: 1.8;
     }
 
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem 2rem;
+      font-size: 0.8rem;
+      color: #999;
+      border-top: 1px solid #e8e4dd;
+      margin-top: 1rem;
+    }
+    footer kbd {
+      background: #e8e4dd;
+      border-radius: 3px;
+      padding: 0.1rem 0.35rem;
+      font-size: 0.78rem;
+      font-family: inherit;
+    }
+
     /* ── Mobile ── */
     @media (max-width: 480px) {
       .karte-beschr { font-size: 1rem; }   /* 16px auf kleinen Displays */
       .kat-header h2 { font-size: 1rem; }
       main { margin-top: 1.25rem; }
+      footer span:last-child { display: none; } /* Tastenkürzel auf Mobile ausblenden */
     }
   </style>
 </head>
@@ -283,13 +316,16 @@
 
 <!-- Suchfeld -->
 <div class="search-wrap">
-  <input
-    type="search"
-    id="suche"
-    placeholder="Suchen nach Titel, Beschreibung oder Kategorie …"
-    autocomplete="off"
-    spellcheck="false"
-  >
+  <div class="search-inner">
+    <input
+      type="search"
+      id="suche"
+      placeholder="Suchen … (Tipp: / drücken zum Fokussieren)"
+      autocomplete="off"
+      spellcheck="false"
+      aria-label="Links durchsuchen"
+    >
+  </div>
 </div>
 
 <main>
@@ -527,6 +563,23 @@ document.getElementById('suche').addEventListener('input', e => {
   debounceTimer = setTimeout(() => filtern(e.target.value), 150);
 });
 
+// ── Tastatur-Shortcut: "/" fokussiert das Suchfeld ──
+document.addEventListener('keydown', e => {
+  const suche = document.getElementById('suche');
+  // "/" nur wenn kein Eingabefeld fokussiert ist
+  if (e.key === '/' && document.activeElement !== suche) {
+    e.preventDefault();
+    suche.focus();
+    suche.select();
+  }
+  // Escape leert und verlässt das Suchfeld
+  if (e.key === 'Escape' && document.activeElement === suche) {
+    suche.value = '';
+    filtern('');
+    suche.blur();
+  }
+});
+
 // ── Daten laden und Seite aufbauen ──
 fetch('links.json')
   .then(r => {
@@ -535,12 +588,22 @@ fetch('links.json')
   })
   .then(links => {
     aufbauen(links);
+    // Footer: Gesamtanzahl und Stand
+    const footer = document.getElementById('footer-info');
+    if (footer) {
+      footer.textContent = `${links.length} Links in ${new Set(links.map(l => l.kategorie)).size} Kategorien · Stand: Juni 2026`;
+    }
   })
   .catch(err => {
     document.getElementById('kategorien').innerHTML =
       `<p style="color:#c0392b;padding:1rem">Fehler: ${escHtml(err.message)}</p>`;
   });
 </script>
+
+<footer>
+  <span id="footer-info"></span>
+  <span>· Tastenkürzel: <kbd>/</kbd> Suche, <kbd>Esc</kbd> zurück</span>
+</footer>
 
 </body>
 </html>
