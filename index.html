@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jour Fixe DGB 2026 – Linkliste</title>
-  <!-- Inline-Favicon: kleines Bücherregal-Emoji als SVG -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
   <style>
     /* ── Grundlayout ── */
@@ -18,9 +17,11 @@
       min-height: 100vh;
     }
 
-    /* ── Header ── */
+    /* ── Header ──
+       Warmes Dunkelgrau statt kaltem Navy – wirkt neutraler neben den
+       bunten Kategorie-Akzenten, ohne den Kontrast für Weißtext zu verlieren. */
     header {
-      background: #1a3a5c;
+      background: #2c3340;
       color: #fff;
       padding: 2rem 1.5rem 1.5rem;
       text-align: center;
@@ -43,7 +44,7 @@
       margin-top: 1rem;
       padding: 0.6rem 1.4rem;
       background: #fff;
-      color: #1a3a5c;
+      color: #2c3340;
       font-weight: 700;
       font-size: 0.95rem;
       border-radius: 6px;
@@ -58,7 +59,7 @@
 
     /* ── Suchfeld ── */
     .search-wrap {
-      background: #1a3a5c;
+      background: #2c3340;
       padding: 0 1.5rem 1.75rem;
     }
     .search-inner {
@@ -66,7 +67,6 @@
       max-width: 640px;
       margin: 0 auto;
     }
-    /* Lupe-Icon links im Suchfeld */
     .search-inner::before {
       content: '🔍';
       position: absolute;
@@ -88,15 +88,52 @@
       outline: none;
       color: #2d2d2d;
     }
-    #suche:focus {
-      box-shadow: 0 0 0 3px #5b9bd5;
-    }
+    #suche:focus { box-shadow: 0 0 0 3px #5b9bd5; }
     #suche::placeholder { color: #999; }
+
+    /* Farbband – verbindet Header visuell mit den Kategorie-Akzenten */
+    .kat-farbband {
+      height: 4px;
+      background: linear-gradient(to right,
+        #2e7d9e, #4a7c59, #7b5ea7, #c0733a, #3a7abf,
+        #2a8f8f, #5c7a2e, #b05b7a, #6b5c3e, #d4813a, #466e8c);
+    }
+
+    /* ── Sprungmenü – Kategorie-Pills ── */
+    #sprung-wrap {
+      background: #fff;
+      border-bottom: 1px solid #e8e4dd;
+    }
+    #sprung-nav {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0.7rem 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+    .sprung-pill {
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.3rem 0.7rem;
+      border-radius: 20px;
+      border: 1.5px solid var(--farbe, #888);
+      color: var(--farbe, #888);
+      background: transparent;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 0.15s, color 0.15s;
+      line-height: 1.4;
+    }
+    .sprung-pill:hover {
+      background: var(--farbe, #888);
+      color: #fff;
+    }
 
     /* ── Hauptbereich ── */
     main {
       max-width: 960px;
-      margin: 2rem auto;
+      margin: 1.5rem auto;
       padding: 0 1rem 3rem;
     }
 
@@ -116,7 +153,7 @@
     }
     .toggle-btn {
       font-size: 0.8rem;
-      color: #1a3a5c;
+      color: #2c3340;
       background: none;
       border: 1px solid #c8c4be;
       border-radius: 5px;
@@ -152,8 +189,7 @@
       cursor: pointer;
       user-select: none;
       border-bottom: 2px solid #e8e4dd;
-      /* Farbige linke Linie je Kategorie – wird per data-kat-index gesetzt */
-      border-left: 4px solid var(--kat-farbe, #1a3a5c);
+      border-left: 4px solid var(--kat-farbe, #2c3340);
       transition: background 0.15s;
     }
     .kat-header:hover { background: #f7f5f2; }
@@ -169,19 +205,20 @@
     .kat-header h2 {
       font-size: 1.05rem;
       font-weight: 700;
-      color: #1a3a5c;
+      color: #2c3340;
       letter-spacing: -0.01em;
     }
 
     /* Anzahl-Badge */
     .kat-count {
-      font-size: 0.78rem;
+      font-size: 0.75rem;
       background: #e8e4dd;
       color: #555;
       border-radius: 20px;
-      padding: 0.15rem 0.6rem;
+      padding: 0.15rem 0.65rem;
       margin-left: 0.5rem;
       flex-shrink: 0;
+      white-space: nowrap;
     }
 
     /* Pfeil-Icon */
@@ -203,11 +240,10 @@
       padding: 0 0.75rem;
       max-height: 0;
       overflow: hidden;
-      /* max-height und gap/padding animieren beim Auf-/Zuklappen */
       transition: max-height 0.3s ease, padding 0.25s ease, gap 0.25s ease;
     }
     .kategorie.offen .kat-body {
-      max-height: 6000px; /* großzügig – selbst die größte Kategorie passt rein */
+      max-height: 6000px;
       padding: 0.75rem;
       gap: 0.65rem;
     }
@@ -229,24 +265,49 @@
     .karte:hover {
       box-shadow: 0 4px 14px rgba(0,0,0,0.13);
       transform: translateY(-2px);
-      border-left-color: var(--kat-farbe, #1a3a5c);
+      border-left-color: var(--kat-farbe, #2c3340);
     }
 
     /* Karten-Titel */
     .karte-titel {
       font-size: 0.98rem;
       font-weight: 700;
-      color: #1a3a5c;
+      color: #2c3340;
       line-height: 1.3;
     }
 
     /* Karten-Beschreibung */
     .karte-beschr {
-      font-size: 0.9375rem;  /* 15px Desktop, 16px+ auf Mobile */
+      font-size: 0.9375rem;
       color: #444;
       line-height: 1.5;
       flex: 1;
     }
+
+    /* Karten-Fußzeile: Linktyp-Badge + Domain nebeneinander */
+    .karte-fuss {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-top: 0.2rem;
+    }
+
+    /* Linktyp-Badge (PDF, Drive, Video …) */
+    .karte-typ {
+      font-size: 0.67rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-radius: 3px;
+      padding: 0.12rem 0.4rem;
+      flex-shrink: 0;
+    }
+    .typ-pdf    { background: #fde8e8; color: #b91c1c; }
+    .typ-drive  { background: #e8f0fe; color: #1a56db; }
+    .typ-video  { background: #fef3c7; color: #b45309; }
+    .typ-padlet { background: #e8f4f0; color: #0f766e; }
+    .typ-docs   { background: #e8f0fe; color: #1a56db; }
 
     /* Domain-Badge */
     .karte-domain {
@@ -255,10 +316,8 @@
       color: #666;
       background: #f0ede8;
       border-radius: 4px;
-      padding: 0.15rem 0.45rem;
-      margin-top: 0.25rem;
+      padding: 0.12rem 0.45rem;
       word-break: break-all;
-      align-self: flex-start;       /* nicht volle Breite */
       letter-spacing: 0.01em;
     }
 
@@ -289,12 +348,32 @@
       font-family: inherit;
     }
 
-    /* ── Mobile ── */
+    /* ── Mobile (≤ 640px) ── */
+    @media (max-width: 640px) {
+      /* Sprungmenü scrollt horizontal statt zu umbrechen */
+      #sprung-nav {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        /* Scrollbar auf iOS/Android ausblenden */
+        scrollbar-width: none;
+        padding-bottom: 0.5rem;
+      }
+      #sprung-nav::-webkit-scrollbar { display: none; }
+
+      /* Steuerleiste: Buttons untereinander wenn nötig */
+      #toggle-buttons { gap: 0.4rem; }
+    }
+
     @media (max-width: 480px) {
-      .karte-beschr { font-size: 1rem; }   /* 16px auf kleinen Displays */
+      .karte-beschr { font-size: 1rem; }
       .kat-header h2 { font-size: 1rem; }
-      main { margin-top: 1.25rem; }
-      footer span:last-child { display: none; } /* Tastenkürzel auf Mobile ausblenden */
+      main { margin-top: 1rem; }
+      footer span:last-child { display: none; }
+      /* Auf sehr schmalen Geräten: etwas weniger Seitenabstand */
+      main { padding-left: 0.75rem; padding-right: 0.75rem; }
+      .kat-body { padding: 0 0.5rem; }
+      .kategorie.offen .kat-body { padding: 0.6rem 0.5rem; }
     }
   </style>
 </head>
@@ -328,6 +407,14 @@
   </div>
 </div>
 
+<!-- Farbband: visueller Übergang zwischen Header und Kategorienbereich -->
+<div class="kat-farbband"></div>
+
+<!-- Sprungmenü: klickbare Pills für alle 11 Kategorien -->
+<div id="sprung-wrap">
+  <nav id="sprung-nav" aria-label="Zu Kategorie springen"></nav>
+</div>
+
 <main>
   <div id="steuerleiste">
     <div id="treffer-info"></div>
@@ -356,19 +443,60 @@ function domain(url) {
   }
 }
 
-// Farbpalette für die 11 Kategorien – ruhige, harmonische Töne
+/**
+ * Erkennt den Linktyp anhand der URL.
+ * Gibt { klass, label } zurück oder null für normale Webseiten.
+ */
+function linkTyp(url) {
+  const u = url.toLowerCase();
+  if (u.endsWith('.pdf') || u.includes('.pdf?') || u.includes('/pdf/'))
+    return { klass: 'typ-pdf', label: 'PDF' };
+  if (u.includes('drive.google.com'))
+    return { klass: 'typ-drive', label: 'Google Drive' };
+  if (u.includes('docs.google.com'))
+    return { klass: 'typ-docs', label: 'Google Docs' };
+  if (u.includes('youtube.com') || u.includes('youtu.be'))
+    return { klass: 'typ-video', label: 'Video' };
+  if (u.includes('padlet.com'))
+    return { klass: 'typ-padlet', label: 'Padlet' };
+  return null;
+}
+
+/**
+ * Entfernt bekannte Typ-Annotationen aus dem Titel fürs Display.
+ * Die links.json bleibt unverändert – nur die Anzeige wird bereinigt.
+ * Beispiel: "Big Picture (PDF)" → "Big Picture"
+ */
+function titelOhneTyp(titel) {
+  return titel
+    .replace(/\s*\(PDF\)\s*$/i, '')
+    .replace(/\s*\(Google Drive\)\s*$/i, '')
+    .replace(/\s*\(YouTube\)\s*$/i, '')
+    .replace(/\s*–\s*Google Drive\s*$/i, '')
+    .trim();
+}
+
+/**
+ * Formatiert die Link-Anzahl für das Badge.
+ * "1 Link" (Singular) vs. "13 Links" (Plural)
+ */
+function linkBadge(n) {
+  return n === 1 ? '1 Link' : `${n} Links`;
+}
+
+// Farbpalette für die 11 Kategorien
 const KAT_FARBEN = [
-  '#2e7d9e', // 1 Ministerium       – Stahlblau
-  '#4a7c59', // 2 Lernplattformen   – Waldgrün
-  '#7b5ea7', // 3 Fortbildung       – Lila
-  '#c0733a', // 4 Medienbildung     – Terrakotta
-  '#3a7abf', // 5 KI / AI Act       – Kobaltblau
-  '#2a8f8f', // 6 KI-Tools          – Petrol
-  '#5c7a2e', // 7 Open Source       – Olivgrün
-  '#b05b7a', // 8 Makerspace        – Altrosa
-  '#6b5c3e', // 9 DGB-Tools         – Sandbraun
-  '#d4813a', // 10 Deutsch          – Ocker
-  '#466e8c', // 11 Fachspezifisch   – Schieferblau
+  '#2e7d9e', // 1  Ministerium       – Stahlblau
+  '#4a7c59', // 2  Lernplattformen   – Waldgrün
+  '#7b5ea7', // 3  Fortbildung       – Lila
+  '#c0733a', // 4  Medienbildung     – Terrakotta
+  '#3a7abf', // 5  KI / AI Act       – Kobaltblau
+  '#2a8f8f', // 6  KI-Tools          – Petrol
+  '#5c7a2e', // 7  Open Source       – Olivgrün
+  '#b05b7a', // 8  Makerspace        – Altrosa
+  '#6b5c3e', // 9  DGB-Tools         – Sandbraun
+  '#d4813a', // 10 Deutsch           – Ocker
+  '#466e8c', // 11 Fachspezifisch    – Schieferblau
 ];
 
 /**
@@ -376,58 +504,85 @@ const KAT_FARBEN = [
  * Wird einmal nach dem fetch() aufgerufen.
  */
 function aufbauen(links) {
-  const container = document.getElementById('kategorien');
+  const container  = document.getElementById('kategorien');
+  const sprungNav  = document.getElementById('sprung-nav');
 
   // Alle einzigartigen Kategorien in der Reihenfolge ihres ersten Auftretens
   const kategorien = [...new Set(links.map(l => l.kategorie))];
 
   kategorien.forEach((kat, idx) => {
     const eintraege = links.filter(l => l.kategorie === kat);
-    const farbe = KAT_FARBEN[idx % KAT_FARBEN.length];
+    const farbe     = KAT_FARBEN[idx % KAT_FARBEN.length];
 
-    // Wrapper-Div für Akkordeon – Farbe als CSS-Variable durchgereicht
+    // ── Sprung-Pill ──────────────────────────────────────────────────────
+    const titelTeile = kat.match(/^(\d+\.\s*)(.+)$/);
+    const kurzname   = titelTeile ? titelTeile[2] : kat; // Nummer weglassen
+
+    const pill = document.createElement('button');
+    pill.className = 'sprung-pill';
+    pill.style.setProperty('--farbe', farbe);
+    pill.textContent = kurzname;
+    pill.title = `Zu Kategorie: ${kat}`;
+    pill.addEventListener('click', () => {
+      const ziel = document.querySelector(`.kategorie[data-kat="${CSS.escape(kat)}"]`);
+      if (!ziel) return;
+      ziel.classList.add('offen');
+      // Kurze Pause damit die Animation starten kann, dann scrollen
+      setTimeout(() => ziel.scrollIntoView({ behavior: 'smooth', block: 'start' }), 30);
+    });
+    sprungNav.appendChild(pill);
+
+    // ── Akkordeon-Block ───────────────────────────────────────────────────
     const div = document.createElement('div');
     div.className = 'kategorie';
     div.dataset.kat = kat;
     div.style.setProperty('--kat-farbe', farbe);
 
-    // Kategorie-Titel splitten: "1. Foo" → <span class="kat-nummer">1.</span> Foo
-    const titelTeile = kat.match(/^(\d+\.\s*)(.+)$/);
     const titelHtml = titelTeile
       ? `<span class="kat-nummer">${escHtml(titelTeile[1])}</span>${escHtml(titelTeile[2])}`
       : escHtml(kat);
 
-    // Kopfzeile (klickbar)
     const header = document.createElement('div');
     header.className = 'kat-header';
     header.innerHTML = `
       <h2>${titelHtml}</h2>
       <span style="display:flex;align-items:center;gap:0.4rem">
-        <span class="kat-count">${eintraege.length}</span>
+        <span class="kat-count">${linkBadge(eintraege.length)}</span>
         <span class="kat-arrow">▼</span>
       </span>
     `;
     header.addEventListener('click', () => div.classList.toggle('offen'));
 
-    // Karten-Container
+    // ── Karten ───────────────────────────────────────────────────────────
     const body = document.createElement('div');
     body.className = 'kat-body';
 
     eintraege.forEach(link => {
+      const typ      = linkTyp(link.url);
+      const anzeigeTitel = titelOhneTyp(link.titel);
+
+      // Typ-Badge HTML (leer wenn normaler Link)
+      const typHtml = typ
+        ? `<span class="karte-typ ${escHtml(typ.klass)}">${escHtml(typ.label)}</span>`
+        : '';
+
       const a = document.createElement('a');
       a.className = 'karte';
-      a.href = link.url;
-      a.target = '_blank';
-      a.rel = 'noopener noreferrer';
-      // Originaltexte für Highlighting-Reset speichern
-      a.dataset.titel = link.titel;
+      a.href      = link.url;
+      a.target    = '_blank';
+      a.rel       = 'noopener noreferrer';
+      // Originaltexte für Highlighting-Reset (ungekürzt, fürs Filtern)
+      a.dataset.titel  = link.titel;
       a.dataset.beschr = link.beschreibung;
-      // Suchindex (alles klein für case-insensitive Suche)
-      a.dataset.suche = [link.titel, link.beschreibung, link.kategorie].join(' ').toLowerCase();
+      // Suchindex: Originaltext inkl. "(PDF)" usw. damit man danach suchen kann
+      a.dataset.suche  = [link.titel, link.beschreibung, link.kategorie].join(' ').toLowerCase();
       a.innerHTML = `
-        <div class="karte-titel">${escHtml(link.titel)}</div>
+        <div class="karte-titel">${escHtml(anzeigeTitel)}</div>
         <div class="karte-beschr">${escHtml(link.beschreibung)}</div>
-        <div class="karte-domain">${escHtml(domain(link.url))}</div>
+        <div class="karte-fuss">
+          ${typHtml}
+          <span class="karte-domain">${escHtml(domain(link.url))}</span>
+        </div>
       `;
       body.appendChild(a);
     });
@@ -437,14 +592,13 @@ function aufbauen(links) {
     container.appendChild(div);
   });
 
-  // Erste Kategorie beim Laden automatisch aufklappen – gibt sofort Inhalt zu sehen
+  // Erste Kategorie beim Laden aufklappen
   const erste = container.querySelector('.kategorie');
   if (erste) erste.classList.add('offen');
 }
 
 /**
  * Fügt <mark>-Tags um alle Vorkommen von `q` im Text ein.
- * Gibt den Text mit Highlighting zurück; ohne Suche unverändert.
  */
 function highlightText(text, q) {
   if (!q) return escHtml(text);
@@ -457,40 +611,36 @@ let offenVorSuche = null;
 
 /**
  * Filtert die Karten nach dem Suchbegriff.
- * - Klappt Treffer-Kategorien auf, verbirgt leere Kategorien
- * - Hebt Treffer gelb hervor
- * - Stellt beim Leeren den Vorher-Zustand wieder her
  */
 function filtern(Begriff) {
-  const q = Begriff.trim().toLowerCase();
-  const alleKats = document.querySelectorAll('.kategorie');
-  const info = document.getElementById('treffer-info');
-  const leer = document.getElementById('leer');
+  const q             = Begriff.trim().toLowerCase();
+  const alleKats      = document.querySelectorAll('.kategorie');
+  const info          = document.getElementById('treffer-info');
+  const leer          = document.getElementById('leer');
   const toggleButtons = document.getElementById('toggle-buttons');
-  let gesamtTreffer = 0;
+  let gesamtTreffer   = 0;
 
-  // ── Suche geleert: Zustand vor der Suche wiederherstellen ──
+  // ── Suche geleert: Vorher-Zustand wiederherstellen ──
   if (!q) {
     alleKats.forEach(kat => {
       const karten = kat.querySelectorAll('.karte');
       karten.forEach(karte => {
         karte.style.display = '';
-        // Highlighting entfernen: Original-HTML aus data-Attribut wiederherstellen
         const t = karte.querySelector('.karte-titel');
         const b = karte.querySelector('.karte-beschr');
-        if (t) t.innerHTML = escHtml(karte.dataset.titel);
+        // Titel im Display-Format (ohne Typ-Suffix) wiederherstellen
+        if (t) t.innerHTML = escHtml(titelOhneTyp(karte.dataset.titel));
         if (b) b.innerHTML = escHtml(karte.dataset.beschr);
       });
       const badge = kat.querySelector('.kat-count');
-      if (badge) badge.textContent = karten.length;
+      if (badge) badge.textContent = linkBadge(karten.length);
       kat.style.display = '';
-      // Offen-Status auf Zustand vor der Suche zurücksetzen
       if (offenVorSuche !== null) {
         kat.classList.toggle('offen', offenVorSuche.has(kat));
       }
     });
-    offenVorSuche = null;
-    info.textContent = '';
+    offenVorSuche      = null;
+    info.textContent   = '';
     leer.style.display = 'none';
     toggleButtons.style.display = 'none';
     return;
@@ -498,24 +648,21 @@ function filtern(Begriff) {
 
   // Beim ersten Such-Keystroke Offen-Zustand merken
   if (offenVorSuche === null) {
-    offenVorSuche = new Set(
-      [...alleKats].filter(k => k.classList.contains('offen'))
-    );
+    offenVorSuche = new Set([...alleKats].filter(k => k.classList.contains('offen')));
   }
 
   alleKats.forEach(kat => {
     const karten = kat.querySelectorAll('.karte');
-    let treffer = 0;
+    let treffer  = 0;
 
     karten.forEach(karte => {
       const passt = karte.dataset.suche.includes(q);
       karte.style.display = passt ? '' : 'none';
       if (passt) {
         treffer++;
-        // Suchbegriff im Titel und in der Beschreibung hervorheben
         const t = karte.querySelector('.karte-titel');
         const b = karte.querySelector('.karte-beschr');
-        if (t) t.innerHTML = highlightText(karte.dataset.titel, q);
+        if (t) t.innerHTML = highlightText(titelOhneTyp(karte.dataset.titel), q);
         if (b) b.innerHTML = highlightText(karte.dataset.beschr, q);
       }
     });
@@ -528,13 +675,11 @@ function filtern(Begriff) {
       kat.style.display = '';
       kat.classList.add('offen');
       const badge = kat.querySelector('.kat-count');
-      if (badge) badge.textContent = treffer;
+      if (badge) badge.textContent = linkBadge(treffer);
     }
   });
 
-  info.textContent = gesamtTreffer > 0
-    ? `${gesamtTreffer} Treffer für „${Begriff.trim()}"`
-    : '';
+  info.textContent   = gesamtTreffer > 0 ? `${gesamtTreffer} Treffer für „${Begriff.trim()}"` : '';
   leer.style.display = gesamtTreffer === 0 ? 'block' : 'none';
   toggleButtons.style.display = gesamtTreffer > 0 ? '' : 'none';
 }
@@ -563,16 +708,14 @@ document.getElementById('suche').addEventListener('input', e => {
   debounceTimer = setTimeout(() => filtern(e.target.value), 150);
 });
 
-// ── Tastatur-Shortcut: "/" fokussiert das Suchfeld ──
+// ── Tastatur-Shortcuts ──
 document.addEventListener('keydown', e => {
   const suche = document.getElementById('suche');
-  // "/" nur wenn kein Eingabefeld fokussiert ist
   if (e.key === '/' && document.activeElement !== suche) {
     e.preventDefault();
     suche.focus();
     suche.select();
   }
-  // Escape leert und verlässt das Suchfeld
   if (e.key === 'Escape' && document.activeElement === suche) {
     suche.value = '';
     filtern('');
@@ -588,10 +731,10 @@ fetch('links.json')
   })
   .then(links => {
     aufbauen(links);
-    // Footer: Gesamtanzahl und Stand
     const footer = document.getElementById('footer-info');
     if (footer) {
-      footer.textContent = `${links.length} Links in ${new Set(links.map(l => l.kategorie)).size} Kategorien · Stand: Juni 2026`;
+      footer.textContent =
+        `${links.length} Links in ${new Set(links.map(l => l.kategorie)).size} Kategorien · Stand: Juni 2026`;
     }
   })
   .catch(err => {
