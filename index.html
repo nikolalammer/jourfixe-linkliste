@@ -17,11 +17,25 @@
       min-height: 100vh;
     }
 
-    /* ── Header ──
-       Warmes Dunkelgrau statt kaltem Navy – wirkt neutraler neben den
-       bunten Kategorie-Akzenten, ohne den Kontrast für Weißtext zu verlieren. */
+    /* ── Header-Bereich (Titel + Suchfeld) ──
+       Hintergrundbild mit dunklem Overlay für Textlesbarkeit.
+       Warmes Dunkelgrau als Fallback und Overlay-Tint. */
+    .header-area {
+      background: #2c3340 url('header-bg.webp') center/cover no-repeat;
+      position: relative;
+    }
+    /* Dunkler Overlay: Bildhelligkeit dämpfen, Weißtext kontrastsicher halten */
+    .header-area::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(44, 51, 64, 0.62);
+      pointer-events: none;
+    }
     header {
-      background: #2c3340;
+      background: transparent;
+      position: relative;
+      z-index: 1;
       color: #fff;
       padding: 2rem 1.5rem 1.5rem;
       text-align: center;
@@ -59,7 +73,9 @@
 
     /* ── Suchfeld ── */
     .search-wrap {
-      background: #2c3340;
+      background: transparent;
+      position: relative;
+      z-index: 1;
       padding: 0 1.5rem 1.75rem;
     }
     .search-inner {
@@ -379,31 +395,33 @@
 </head>
 <body>
 
-<header>
-  <h1>Jour Fixe DGB 2026 – Linkliste</h1>
-  <p class="header-intro">
-    Alle Links aus dem Jour Fixe DGB 2026 – durchsuchbar und nach Themen geordnet.<br>
-    Einfach reinschauen oder gezielt suchen.
-  </p>
-  <a
-    href="https://canva.link/osw5c1m9vod2zms"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="pres-btn"
-  >▶ Präsentation ansehen</a>
-</header>
+<div class="header-area">
+  <header>
+    <h1>Jour Fixe DGB 2026 – Linkliste</h1>
+    <p class="header-intro">
+      Alle Links aus dem Jour Fixe DGB 2026 – durchsuchbar und nach Themen geordnet.<br>
+      Einfach reinschauen oder gezielt suchen.
+    </p>
+    <a
+      href="https://canva.link/osw5c1m9vod2zms"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="pres-btn"
+    >▶ Präsentation ansehen</a>
+  </header>
 
-<!-- Suchfeld -->
-<div class="search-wrap">
-  <div class="search-inner">
-    <input
-      type="search"
-      id="suche"
-      placeholder="Suchen … (Tipp: / drücken zum Fokussieren)"
-      autocomplete="off"
-      spellcheck="false"
-      aria-label="Links durchsuchen"
-    >
+  <!-- Suchfeld -->
+  <div class="search-wrap">
+    <div class="search-inner">
+      <input
+        type="search"
+        id="suche"
+        placeholder="Suchen … (Tipp: / drücken zum Fokussieren)"
+        autocomplete="off"
+        spellcheck="false"
+        aria-label="Links durchsuchen"
+      >
+    </div>
   </div>
 </div>
 
