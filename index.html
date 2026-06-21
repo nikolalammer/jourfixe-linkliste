@@ -85,12 +85,38 @@
       padding: 0 1rem 3rem;
     }
 
-    /* ── Trefferinfo bei Suche ── */
+    /* ── Steuerleiste (Trefferinfo + Toggles) ── */
+    #steuerleiste {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      min-height: 1.75rem;
+    }
     #treffer-info {
       font-size: 0.875rem;
       color: #666;
-      margin-bottom: 1rem;
-      min-height: 1.25em;
+    }
+    .toggle-btn {
+      font-size: 0.8rem;
+      color: #1a3a5c;
+      background: none;
+      border: 1px solid #c8c4be;
+      border-radius: 5px;
+      padding: 0.25rem 0.7rem;
+      cursor: pointer;
+      transition: background 0.12s;
+    }
+    .toggle-btn:hover { background: #ebe8e2; }
+
+    /* Highlighting von Suchtreffern */
+    mark {
+      background: #ffe066;
+      color: inherit;
+      border-radius: 2px;
+      padding: 0 1px;
     }
 
     /* ── Kategorie-Akkordeon ── */
@@ -228,6 +254,7 @@
       padding: 3rem 1rem;
       color: #777;
       font-size: 1rem;
+      line-height: 1.8;
     }
 
     /* ── Mobile ── */
@@ -266,9 +293,18 @@
 </div>
 
 <main>
-  <div id="treffer-info"></div>
+  <div id="steuerleiste">
+    <div id="treffer-info"></div>
+    <div id="toggle-buttons" style="display:none">
+      <button class="toggle-btn" id="btn-alle-auf">Alle aufklappen</button>
+      <button class="toggle-btn" id="btn-alle-zu">Alle zuklappen</button>
+    </div>
+  </div>
   <div id="kategorien"></div>
-  <div id="leer">Keine Treffer gefunden.</div>
+  <div id="leer">
+    Kein Treffer.<br>
+    <span style="font-size:0.875rem">Probiere einen anderen Begriff oder stöbere direkt in den Kategorien.</span>
+  </div>
 </main>
 
 <script>
@@ -347,7 +383,10 @@ function aufbauen(links) {
       a.href = link.url;
       a.target = '_blank';
       a.rel = 'noopener noreferrer';
-      // Datensatz fürs Filtern speichern (alles klein für case-insensitive Suche)
+      // Originaltexte für Highlighting-Reset speichern
+      a.dataset.titel = link.titel;
+      a.dataset.beschr = link.beschreibung;
+      // Suchindex (alles klein für case-insensitive Suche)
       a.dataset.suche = [link.titel, link.beschreibung, link.kategorie].join(' ').toLowerCase();
       a.innerHTML = `
         <div class="karte-titel">${escHtml(link.titel)}</div>
@@ -368,62 +407,100 @@ function aufbauen(links) {
 }
 
 /**
+ * Fügt <mark>-Tags um alle Vorkommen von `q` im Text ein.
+ * Gibt den Text mit Highlighting zurück; ohne Suche unverändert.
+ */
+function highlightText(text, q) {
+  if (!q) return escHtml(text);
+  const regex = new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
+  return escHtml(text).replace(regex, m => `<mark>${m}</mark>`);
+}
+
+// Merkt sich welche Kategorien VOR der Suche offen waren
+let offenVorSuche = null;
+
+/**
  * Filtert die Karten nach dem Suchbegriff.
- * Klappt Kategorien mit Treffern automatisch auf,
- * Kategorien ohne Treffer werden ausgeblendet.
+ * - Klappt Treffer-Kategorien auf, verbirgt leere Kategorien
+ * - Hebt Treffer gelb hervor
+ * - Stellt beim Leeren den Vorher-Zustand wieder her
  */
 function filtern(Begriff) {
   const q = Begriff.trim().toLowerCase();
   const alleKats = document.querySelectorAll('.kategorie');
   const info = document.getElementById('treffer-info');
   const leer = document.getElementById('leer');
+  const toggleButtons = document.getElementById('toggle-buttons');
   let gesamtTreffer = 0;
+
+  // ── Suche geleert: Zustand vor der Suche wiederherstellen ──
+  if (!q) {
+    alleKats.forEach(kat => {
+      const karten = kat.querySelectorAll('.karte');
+      karten.forEach(karte => {
+        karte.style.display = '';
+        // Highlighting entfernen: Original-HTML aus data-Attribut wiederherstellen
+        const t = karte.querySelector('.karte-titel');
+        const b = karte.querySelector('.karte-beschr');
+        if (t) t.innerHTML = escHtml(karte.dataset.titel);
+        if (b) b.innerHTML = escHtml(karte.dataset.beschr);
+      });
+      const badge = kat.querySelector('.kat-count');
+      if (badge) badge.textContent = karten.length;
+      kat.style.display = '';
+      // Offen-Status auf Zustand vor der Suche zurücksetzen
+      if (offenVorSuche !== null) {
+        kat.classList.toggle('offen', offenVorSuche.has(kat));
+      }
+    });
+    offenVorSuche = null;
+    info.textContent = '';
+    leer.style.display = 'none';
+    toggleButtons.style.display = 'none';
+    return;
+  }
+
+  // Beim ersten Such-Keystroke Offen-Zustand merken
+  if (offenVorSuche === null) {
+    offenVorSuche = new Set(
+      [...alleKats].filter(k => k.classList.contains('offen'))
+    );
+  }
 
   alleKats.forEach(kat => {
     const karten = kat.querySelectorAll('.karte');
     let treffer = 0;
 
     karten.forEach(karte => {
-      const passt = !q || karte.dataset.suche.includes(q);
+      const passt = karte.dataset.suche.includes(q);
       karte.style.display = passt ? '' : 'none';
-      if (passt) treffer++;
+      if (passt) {
+        treffer++;
+        // Suchbegriff im Titel und in der Beschreibung hervorheben
+        const t = karte.querySelector('.karte-titel');
+        const b = karte.querySelector('.karte-beschr');
+        if (t) t.innerHTML = highlightText(karte.dataset.titel, q);
+        if (b) b.innerHTML = highlightText(karte.dataset.beschr, q);
+      }
     });
 
     gesamtTreffer += treffer;
 
     if (treffer === 0) {
-      // Kategorie komplett verstecken
       kat.style.display = 'none';
     } else {
       kat.style.display = '';
-      // Bei aktiver Suche: Kategorien mit Treffern aufklappen
-      if (q) {
-        kat.classList.add('offen');
-      }
-      // Badge aktualisieren
+      kat.classList.add('offen');
       const badge = kat.querySelector('.kat-count');
       if (badge) badge.textContent = treffer;
     }
   });
 
-  // Wenn kein Suchbegriff: Badge-Zahlen zurücksetzen
-  if (!q) {
-    alleKats.forEach(kat => {
-      const karten = kat.querySelectorAll('.karte');
-      const badge = kat.querySelector('.kat-count');
-      if (badge) badge.textContent = karten.length;
-      kat.style.display = '';
-    });
-    info.textContent = '';
-    leer.style.display = 'none';
-    return;
-  }
-
-  info.textContent = gesamtTreffer === 0
-    ? ''
-    : `${gesamtTreffer} Treffer für „${Begriff.trim()}"`;
-
+  info.textContent = gesamtTreffer > 0
+    ? `${gesamtTreffer} Treffer für „${Begriff.trim()}"`
+    : '';
   leer.style.display = gesamtTreffer === 0 ? 'block' : 'none';
+  toggleButtons.style.display = gesamtTreffer > 0 ? '' : 'none';
 }
 
 /** Einfaches HTML-Escaping gegen XSS */
@@ -435,9 +512,19 @@ function escHtml(str) {
     .replace(/"/g, '&quot;');
 }
 
-// ── Suchfeld-Binding ──
+// ── Alle aufklappen / Alle zuklappen ──
+document.getElementById('btn-alle-auf').addEventListener('click', () => {
+  document.querySelectorAll('.kategorie').forEach(k => k.classList.add('offen'));
+});
+document.getElementById('btn-alle-zu').addEventListener('click', () => {
+  document.querySelectorAll('.kategorie').forEach(k => k.classList.remove('offen'));
+});
+
+// ── Suchfeld-Binding mit Debounce (150 ms) ──
+let debounceTimer;
 document.getElementById('suche').addEventListener('input', e => {
-  filtern(e.target.value);
+  clearTimeout(debounceTimer);
+  debounceTimer = setTimeout(() => filtern(e.target.value), 150);
 });
 
 // ── Daten laden und Seite aufbauen ──
