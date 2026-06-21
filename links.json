@@ -1,0 +1,1136 @@
+[
+  {
+    "kategorie": "1. Ministerium & Bildungsportal",
+    "titel": "Bildungsportal – Big Picture (PDF)",
+    "beschreibung": "Übersichtsgrafik zum Bildungsportal des BMB",
+    "url": "https://www.bildung.gv.at/pluginfile.php/2929856/mod_resource/content/2/Bildungsportal%20Big%20Picture.pdf"
+  },
+  {
+    "kategorie": "1. Ministerium & Bildungsportal",
+    "titel": "Bildungsportal – E-Lectures",
+    "beschreibung": "E-Lecture-Aufzeichnungen zum Bildungsportal",
+    "url": "https://bip.gv.at/faq/help/staff/electures"
+  },
+  {
+    "kategorie": "1. Ministerium & Bildungsportal",
+    "titel": "Rundschreiben – Einführung Bildungsportal",
+    "beschreibung": "Rundschreiben 2024/1 zur Einführung des Bildungsportals",
+    "url": "https://rundschreiben.bmbwf.gv.at/rundschreiben/?id=1330"
+  },
+  {
+    "kategorie": "1. Ministerium & Bildungsportal",
+    "titel": "Marktplatz Lernapps – BMB Info",
+    "beschreibung": "Offizielle BMB-Seite zur Initiative Marktplatz Lernapps",
+    "url": "https://www.bmb.gv.at/Themen/schule/zrp/dibi/inipro/marktplatz-lernapps.html"
+  },
+  {
+    "kategorie": "1. Ministerium & Bildungsportal",
+    "titel": "Marktplatz Lernapps – Portal",
+    "beschreibung": "Direkter Zugang zum Marktplatz-Lernapps-Portal",
+    "url": "https://marktplatz-lernapps.at/start"
+  },
+  {
+    "kategorie": "1. Ministerium & Bildungsportal",
+    "titel": "Next Exam – Prüfungsclient",
+    "beschreibung": "Offizielle Website des Open-Source-Prüfungsclients",
+    "url": "http://www.next-exam.at"
+  },
+  {
+    "kategorie": "1. Ministerium & Bildungsportal",
+    "titel": "KI bei schriftlichen Arbeiten – BMB",
+    "beschreibung": "BMB-Empfehlungen zu KI bei Schularbeiten, Tests, HÜ",
+    "url": "http://www.bmb.gv.at/ki"
+  },
+  {
+    "kategorie": "1. Ministerium & Bildungsportal",
+    "titel": "AHS-ABA – FAQ KI-Tools",
+    "beschreibung": "FAQ der AHS-ABA zum Einsatz von KI-Tools",
+    "url": "https://www.ahs-aba.at/lehrpersonen/faqs/faqs-zum-einsatz-von-ki-tools"
+  },
+  {
+    "kategorie": "1. Ministerium & Bildungsportal",
+    "titel": "IDA – BMB Datenschutz/Sicherheit",
+    "beschreibung": "BMB-Seite zu Datenschutz und Informationssicherheit",
+    "url": "https://www.bmb.gv.at/Themen/schule/zrp/dibi/bip/ida.html"
+  },
+  {
+    "kategorie": "1. Ministerium & Bildungsportal",
+    "titel": "Sicherheit an Schulen (PDF)",
+    "beschreibung": "Folder der Bildungsdirektion OÖ zur Sicherheit an Schulen",
+    "url": "https://www.bildung-ooe.gv.at/dam/jcr:f910486d-4803-4cd0-a7b4-f9b32c9a4796/Folder_Sicherheit.pdf"
+  },
+  {
+    "kategorie": "1. Ministerium & Bildungsportal",
+    "titel": "Bundeskanzleramt – Notfallplan (PDF)",
+    "beschreibung": "Ministerratsvorlage zum Schulnotfall/Krisenmanagement",
+    "url": "https://www.bundeskanzleramt.gv.at/dam/jcr:682a4ef0-fd2f-47e1-a9ba-5333dbef05b7/notfallplan.pdf"
+  },
+  {
+    "kategorie": "1. Ministerium & Bildungsportal",
+    "titel": "BMI – Sicherheitsnachrichten",
+    "beschreibung": "Aktuelle Sicherheitsmeldungen des Innenministeriums",
+    "url": "https://www.bmi.gv.at/news.aspx?id=674A3571686548735774413D"
+  },
+  {
+    "kategorie": "1. Ministerium & Bildungsportal",
+    "titel": "Termino – Terminverwaltung (NEU)",
+    "beschreibung": "Terminplanungs-Tool des Bundeskanzleramts für Behörden und Schulen",
+    "url": "https://www.termino.gv.at/meet/"
+  },
+  {
+    "kategorie": "2. Lernplattformen & Bildungsressourcen",
+    "titel": "digi.case / DLPL",
+    "beschreibung": "'Denken lernen – Probleme lösen', flächendeckend bis 2026/27",
+    "url": "https://dlpl.at/startseite"
+  },
+  {
+    "kategorie": "2. Lernplattformen & Bildungsressourcen",
+    "titel": "digi.case KI",
+    "beschreibung": "KI-Erweiterung der digi.case-Initiative",
+    "url": "https://dlpl.at/digicase-ki"
+  },
+  {
+    "kategorie": "2. Lernplattformen & Bildungsressourcen",
+    "titel": "Eduvidual – Lernplattform",
+    "beschreibung": "Kostenlose Moodle-Lernplattform des Bildungsministeriums",
+    "url": "https://www.eduvidual.at/"
+  },
+  {
+    "kategorie": "2. Lernplattformen & Bildungsressourcen",
+    "titel": "Eduvidual – Ressourcenkatalog",
+    "beschreibung": "OER-Unterrichtsmaterialien auf Eduvidual",
+    "url": "https://www.eduvidual.at/blocks/edupublisher/pages/search.php"
+  },
+  {
+    "kategorie": "2. Lernplattformen & Bildungsressourcen",
+    "titel": "Eduvidual – KI-Lernstrecke",
+    "beschreibung": "5-modulige Lernstrecke zu KI mit Zertifikat (je ca. 1 UE)",
+    "url": "https://www.eduvidual.at/course/view.php?id=212911"
+  },
+  {
+    "kategorie": "2. Lernplattformen & Bildungsressourcen",
+    "titel": "Eduthek",
+    "beschreibung": "Thematische Ressourcensammlung des Bildungsministeriums",
+    "url": "https://www.bildung.gv.at/filter/eduthek/"
+  },
+  {
+    "kategorie": "2. Lernplattformen & Bildungsressourcen",
+    "titel": "Eduthek – Digitale Souveränität",
+    "beschreibung": "Eduthek-Suche zum Thema Digitale Souveränität",
+    "url": "https://www.bildung.gv.at/filter/eduthek/search.php?s=digitale%20Souver%C3%A4nit%C3%A4t"
+  },
+  {
+    "kategorie": "2. Lernplattformen & Bildungsressourcen",
+    "titel": "Edutube",
+    "beschreibung": "Journalistisch recherchierte Kurzvideos und Dokumentationen",
+    "url": "https://www.edutube.at/"
+  },
+  {
+    "kategorie": "2. Lernplattformen & Bildungsressourcen",
+    "titel": "eEducation Austria",
+    "beschreibung": "Initiative des BMB für digitale Kompetenzen in allen Klassen",
+    "url": "https://eeducation.at/"
+  },
+  {
+    "kategorie": "2. Lernplattformen & Bildungsressourcen",
+    "titel": "eEducation – Digitale Schulentwicklung",
+    "beschreibung": "Konzepte zur digitalen Schulentwicklung",
+    "url": "https://eeducation.at/ressourcen/unterlagen/konzepte/digitale-schulentwicklung"
+  },
+  {
+    "kategorie": "2. Lernplattformen & Bildungsressourcen",
+    "titel": "Schule.at – Schulportal",
+    "beschreibung": "Österreichisches Schulportal mit Unterrichtsmaterialien",
+    "url": "https://www.schule.at/"
+  },
+  {
+    "kategorie": "2. Lernplattformen & Bildungsressourcen",
+    "titel": "Schule.at – Unterrichtsportale",
+    "beschreibung": "Übersicht der Unterrichtsportale auf Schule.at",
+    "url": "https://www.schule.at/unterrichtsportale"
+  },
+  {
+    "kategorie": "2. Lernplattformen & Bildungsressourcen",
+    "titel": "KI in der Schule – Schule.at",
+    "beschreibung": "Ressourcen und Informationen zum KI-Einsatz im Bildungsbereich",
+    "url": "https://www.schule.at/schulthemen/kuenstliche-intelligenz-in-der-schule"
+  },
+  {
+    "kategorie": "2. Lernplattformen & Bildungsressourcen",
+    "titel": "Virtuelle PH",
+    "beschreibung": "Online-Fortbildungsplattform der Pädagogischen Hochschulen Österreichs",
+    "url": "https://www.virtuelle-ph.at/"
+  },
+  {
+    "kategorie": "2. Lernplattformen & Bildungsressourcen",
+    "titel": "Virtuelle PH – KI-MOOC",
+    "beschreibung": "Online-Kurs für Lehrkräfte zu KI-Grundlagen",
+    "url": "https://www.virtuelle-ph.at/ki-mooc/"
+  },
+  {
+    "kategorie": "2. Lernplattformen & Bildungsressourcen",
+    "titel": "Virtuelle PH – Copilot Challenge",
+    "beschreibung": "Infoseite zur Copilot Challenge (Mai 2026)",
+    "url": "https://www.virtuelle-ph.at/ki-im-unterricht-ausprobieren-ohne-vorbereitung/"
+  },
+  {
+    "kategorie": "2. Lernplattformen & Bildungsressourcen",
+    "titel": "Edubook – Technische Daten & Labels",
+    "beschreibung": "Technische Daten und Labels digitaler Schulbücher",
+    "url": "https://edubook.at/pages/technische-daten-labels"
+  },
+  {
+    "kategorie": "2. Lernplattformen & Bildungsressourcen",
+    "titel": "Edubook – Warum bestellen",
+    "beschreibung": "Vorteile und Informationen zu Edubook",
+    "url": "https://edubook.at/pages/warum-bei-edubook-bestellen"
+  },
+  {
+    "kategorie": "2. Lernplattformen & Bildungsressourcen",
+    "titel": "Edugroup – Leihgerätepool",
+    "beschreibung": "Leihgerätepool für Schulen über Edugroup",
+    "url": "https://www.edugroup.at/produkte/leihgeraetepool"
+  },
+  {
+    "kategorie": "2. Lernplattformen & Bildungsressourcen",
+    "titel": "Digital Lernen – Webinar-Mitschnitte",
+    "beschreibung": "Aufzeichnungen von Webinaren zu digitalen Lernmethoden",
+    "url": "https://digitaleslernen.oead.at/de/mediathek/webinar-mitschnitte#c94863"
+  },
+  {
+    "kategorie": "3. Fortbildung & Verwaltung",
+    "titel": "PH OÖ – Seminaranmeldung",
+    "beschreibung": "Seminaranmeldung der PH Oberösterreich",
+    "url": "https://ph-ooe.at/seminaranmeldung-1"
+  },
+  {
+    "kategorie": "3. Fortbildung & Verwaltung",
+    "titel": "Saferinternet – Fortbildungen",
+    "beschreibung": "Fortbildungsangebote für Lehrende bei Saferinternet.at",
+    "url": "https://www.saferinternet.at/zielgruppen/lehrende"
+  },
+  {
+    "kategorie": "3. Fortbildung & Verwaltung",
+    "titel": "MDM OÖ – Regionalbetreuer",
+    "beschreibung": "Google Sites: Regionalbetreuer für MDM in OÖ",
+    "url": "https://sites.google.com/gsuite.eeducation.at/mdm-ooe-regionalbetreuer"
+  },
+  {
+    "kategorie": "3. Fortbildung & Verwaltung",
+    "titel": "MDM OÖ – Anleitungen",
+    "beschreibung": "Anleitungen und Dokumentation für MDM in OÖ",
+    "url": "https://sites.google.com/gsuite.eeducation.at/mdm-ooe-regionalbetreuer/anleitungen"
+  },
+  {
+    "kategorie": "3. Fortbildung & Verwaltung",
+    "titel": "LehrerWeb Wien – Fortbildungen",
+    "beschreibung": "Aktuelle Workshops und Fortbildungsangebote",
+    "url": "https://lehrerweb.wien/workshops"
+  },
+  {
+    "kategorie": "3. Fortbildung & Verwaltung",
+    "titel": "LehrerWeb – Werbung im Unterricht",
+    "beschreibung": "Workshop: Werbung und Influencerinnen im Unterricht thematisieren",
+    "url": "https://lehrerweb.wien/workshops/werbung-und-influencerinnen-im-unterricht-thematisieren"
+  },
+  {
+    "kategorie": "3. Fortbildung & Verwaltung",
+    "titel": "LehrerWeb Wien – Aktuell",
+    "beschreibung": "Aktuelle Neuigkeiten für Lehrpersonen aus Wien",
+    "url": "https://lehrerweb.wien/aktuell"
+  },
+  {
+    "kategorie": "3. Fortbildung & Verwaltung",
+    "titel": "Canva – Unterlagen Jour Fixe",
+    "beschreibung": "Gesamte Präsentation im Slideshow-Modus",
+    "url": "https://canva.link/cy1ny054nk3brz1"
+  },
+  {
+    "kategorie": "3. Fortbildung & Verwaltung",
+    "titel": "Google Forms – Feedback",
+    "beschreibung": "Feedback-Formular zum Jour Fixe DGB 2026",
+    "url": "https://forms.gle/4MpdSubBf6Ez2GCL7"
+  },
+  {
+    "kategorie": "4. Medienbildung & Sicherheit",
+    "titel": "Jugend Internet Monitor 2026",
+    "beschreibung": "Aktuelle Studiendaten zur Mediennutzung von Jugendlichen",
+    "url": "https://www.saferinternet.at/services/jugend-internet-monitor/"
+  },
+  {
+    "kategorie": "4. Medienbildung & Sicherheit",
+    "titel": "Jugend Internet Monitor – ikt4you",
+    "beschreibung": "Aufbereitung des Jugend-Internet-Monitors auf ikt4you",
+    "url": "https://www.ikt4you.eu/be-active/weblinks/jugend-internet-monitor"
+  },
+  {
+    "kategorie": "4. Medienbildung & Sicherheit",
+    "titel": "Vernetzungstreffen Gewalt-Schule-Medien",
+    "beschreibung": "11. Vernetzungstreffen zum Thema Gewalt, Schule und Medien",
+    "url": "https://www.edugroup.at/medien/gewalt-schule-medien/11-vernetzungstreffen-gewalt-schule-medien"
+  },
+  {
+    "kategorie": "4. Medienbildung & Sicherheit",
+    "titel": "Forum Medienbildung",
+    "beschreibung": "Vernetzungsplattform zur Medienbildung in Österreich",
+    "url": "https://medienbildung.at/"
+  },
+  {
+    "kategorie": "4. Medienbildung & Sicherheit",
+    "titel": "Digitaler Kompass",
+    "beschreibung": "Gemeinnützige Organisation für Medienkompetenz seit 2016",
+    "url": "https://www.digitalerkompass.at/"
+  },
+  {
+    "kategorie": "4. Medienbildung & Sicherheit",
+    "titel": "Stiftung Medienpädagogik Bayern (NEU)",
+    "beschreibung": "BLM Stiftung: Projekte und Vernetzung für Medienkompetenz in Bayern",
+    "url": "https://www.stiftung-medienpaedagogik-bayern.de/home"
+  },
+  {
+    "kategorie": "4. Medienbildung & Sicherheit",
+    "titel": "Fake Hunter – Adenauer Campus",
+    "beschreibung": "Interaktives Tool zur Erkennung von Fake News",
+    "url": "https://www.adenauercampus.de/de/fake-news/detail/-/content/fake-hunter"
+  },
+  {
+    "kategorie": "4. Medienbildung & Sicherheit",
+    "titel": "Fake Hunter – Schooltools Tipp",
+    "beschreibung": "Schooltools-Beitrag zum Einsatz von Fake Hunter im Unterricht",
+    "url": "https://www.schooltools.at/2025/04/18/fake-hunter/"
+  },
+  {
+    "kategorie": "4. Medienbildung & Sicherheit",
+    "titel": "News Deconstructed",
+    "beschreibung": "Interaktives Tool zur kritischen Quellenprüfung",
+    "url": "https://newsdeconstructed.eu/"
+  },
+  {
+    "kategorie": "4. Medienbildung & Sicherheit",
+    "titel": "APA Checkbar (NEU)",
+    "beschreibung": "Österreichisches Tool: Tipps und Werkzeuge zur Erkennung von Falschinformationen",
+    "url": "https://apa.at/checkbar/checkbar/"
+  },
+  {
+    "kategorie": "4. Medienbildung & Sicherheit",
+    "titel": "Doomscrolling – CHIP Artikel",
+    "beschreibung": "Auswirkungen von Doomscrolling und Social Media auf das Gehirn",
+    "url": "https://www.chip.de/news/hobby-freizeit/doomscrolling-und-co-das-macht-social-media-mit-unserem-gehirn_e6278081-8392-499e-9666-f484e4fd5bb7.html"
+  },
+  {
+    "kategorie": "4. Medienbildung & Sicherheit",
+    "titel": "Tagesschau Faktenfinder",
+    "beschreibung": "Fact-Checking-Ressource der Tagesschau",
+    "url": "https://www.tagesschau.de/faktenfinder"
+  },
+  {
+    "kategorie": "4. Medienbildung & Sicherheit",
+    "titel": "TikTok Algorithmus – Unterricht",
+    "beschreibung": "Unterrichtsidee: TikTok-Algorithmus-Experiment zur Filterblasen-Reflexion",
+    "url": "https://bobblume.de/2025/06/30/unterricht-tiktok-algorithmus-experiment/"
+  },
+  {
+    "kategorie": "4. Medienbildung & Sicherheit",
+    "titel": "Cyber Security Quiz – OvoSplay",
+    "beschreibung": "Interaktives Cybersicherheits-Quiz für den Unterricht",
+    "url": "https://ovosplay.com/cybersecurity-quiz/"
+  },
+  {
+    "kategorie": "4. Medienbildung & Sicherheit",
+    "titel": "Saferinternet – Quiz",
+    "beschreibung": "Medienkompetenz-Quiz auf Saferinternet.at",
+    "url": "https://www.saferinternet.at/quiz"
+  },
+  {
+    "kategorie": "4. Medienbildung & Sicherheit",
+    "titel": "Smartphone Don't Spy",
+    "beschreibung": "Zeigt, welche Daten Smartphones erheben – interaktive Checkliste",
+    "url": "https://smartphone-dont-spy.de/"
+  },
+  {
+    "kategorie": "4. Medienbildung & Sicherheit",
+    "titel": "Smartphone Don't Spy – Schooltools",
+    "beschreibung": "Schooltools-Tipp zum Einsatz im Unterricht",
+    "url": "https://www.schooltools.at/2025/04/28/smartphone-dont-spy/"
+  },
+  {
+    "kategorie": "4. Medienbildung & Sicherheit",
+    "titel": "EU-Jugendschutz App – Info",
+    "beschreibung": "EU-Altersverifikationslösung zum Schutz Minderjähriger online",
+    "url": "https://digital-strategy.ec.europa.eu/en/factpages/blueprint-age-verification-solution-help-protect-minors-online"
+  },
+  {
+    "kategorie": "4. Medienbildung & Sicherheit",
+    "titel": "EU-Jugendschutz App – CHIP",
+    "beschreibung": "CHIP-Artikel zur neuen EU-Altersverifikations-App",
+    "url": "https://www.chip.de/news/software/neue-eu-app-will-ihr-alter-wissen-warum-bald-viele-websites-ihr-alter-kennen-werden_e6278081.html"
+  },
+  {
+    "kategorie": "4. Medienbildung & Sicherheit",
+    "titel": "Smart Aufwachsen",
+    "beschreibung": "Ressourcen für gesundes digitales Aufwachsen – PH Diözese Linz",
+    "url": "https://sites.google.com/phdl.at/smart-aufwachsen"
+  },
+  {
+    "kategorie": "4. Medienbildung & Sicherheit",
+    "titel": "Stabil im Kopf",
+    "beschreibung": "Ressourcen für mentale Gesundheit im digitalen Schulkontext",
+    "url": "https://stabilimkopf.com/"
+  },
+  {
+    "kategorie": "4. Medienbildung & Sicherheit",
+    "titel": "ClassPilot",
+    "beschreibung": "Österreichische App für Unterrichtsorganisation und Klassenmanagement",
+    "url": "https://www.classpilot.at/landing"
+  },
+  {
+    "kategorie": "4. Medienbildung & Sicherheit",
+    "titel": "ZDF Film: Hilfe, wir sind offline! (NEU)",
+    "beschreibung": "Filmtipp: Familie verbannt alle Geräte für einen Monat – ideal für Unterrichtsimpuls",
+    "url": "https://www.zdf.de/filme/hilfe-wir-sind-offline-movie-100"
+  },
+  {
+    "kategorie": "4. Medienbildung & Sicherheit",
+    "titel": "Google über mich – ikt4you (NEU)",
+    "beschreibung": "Datenschutz & Privatsphäre: Welche Daten speichert Google über mich?",
+    "url": "https://www.ikt4you.eu/be-active/weblinks/google-ueber-mich"
+  },
+  {
+    "kategorie": "4. Medienbildung & Sicherheit",
+    "titel": "Geschichte der Medien (Google Drive)",
+    "beschreibung": "Unterrichtsmaterial zur Geschichte der Medien",
+    "url": "https://drive.google.com/file/d/1yGaPRUao8l1VePIXjTaje14oitwnzWFc/view?usp=sharing"
+  },
+  {
+    "kategorie": "4. Medienbildung & Sicherheit",
+    "titel": "Medien IF-Skript (Google Drive, NEU)",
+    "beschreibung": "Skript zur Arbeit mit Schüler/innen im IF-Bereich (Mediengeschichte)",
+    "url": "https://drive.google.com/file/d/142pNu0J35PeX5FSUpLtGbxWPmjKd0zIq/view?usp=sharing"
+  },
+  {
+    "kategorie": "4. Medienbildung & Sicherheit",
+    "titel": "Weitere Medien-Unterlagen (Google Drive, NEU)",
+    "beschreibung": "Zusätzliche Unterlagen zur Mediengeschichte für den Unterricht",
+    "url": "https://drive.google.com/file/d/1wJEtUGCnJAPoT3RcvEgNq8YY6orOez-5/view?usp=sharing"
+  },
+  {
+    "kategorie": "4. Medienbildung & Sicherheit",
+    "titel": "Padlet EduDays PH NÖ (NEU)",
+    "beschreibung": "Lernen mit generativer KI: cAIas als Begleiter im Schulalltag (PH NÖ EduDays)",
+    "url": "https://padlet.com/phnoe/edudays-lernen-mit-gen-ki-chatbots-fur-den-unterricht-erstel-2j05nf5vjykk7zqoc"
+  },
+  {
+    "kategorie": "4. Medienbildung & Sicherheit",
+    "titel": "Padlet digitale Lernspiele Worgatsch (NEU)",
+    "beschreibung": "KI-generierte digitale Lernspiele für Schüler/innen – frei verwendbarer Code",
+    "url": "https://padlet.com/ronaldworgatsch/digitale-lernspiele-und-co-cwosr3p6dpsn7v56"
+  },
+  {
+    "kategorie": "5. KI / EU AI Act",
+    "titel": "AI Act – Zusammenfassung (Google Drive)",
+    "beschreibung": "Zusammenfassung des EU AI Acts für den Schulbereich",
+    "url": "https://drive.google.com/file/d/1eHfZb62uMrV8WRCiTk-ij-c8na_ikuVd/view?usp=sharing"
+  },
+  {
+    "kategorie": "5. KI / EU AI Act",
+    "titel": "Prompts-Sammlung I (Google Drive)",
+    "beschreibung": "Sammlung aller Prompts aus der regionalen KI-Fortbildung",
+    "url": "https://drive.google.com/file/d/1GCuSjJfE_jE_nnDiJ-QmA7lh8gO0Ko_p/view?usp=sharing"
+  },
+  {
+    "kategorie": "5. KI / EU AI Act",
+    "titel": "Prompts-Sammlung II / KI Materialschmiede",
+    "beschreibung": "Weiteres Prompt-Set aus der KI-Materialschmiede II",
+    "url": "https://drive.google.com/file/d/1OEZfa1JiXUNIVg5H-Wwrx2yVq42g5N0K/view?usp=sharing"
+  },
+  {
+    "kategorie": "5. KI / EU AI Act",
+    "titel": "The Dark Side of AI – ikt4you",
+    "beschreibung": "Risiken von KI: Deepfakes, Desinformation, Datenschutz",
+    "url": "https://www.ikt4you.eu/be-active/weblinks/dark-side-ai"
+  },
+  {
+    "kategorie": "5. KI / EU AI Act",
+    "titel": "KI – Wollmilchsau vs. NEETs – ikt4you",
+    "beschreibung": "Kritisch: Technologie allein löst keine Bildungsprobleme",
+    "url": "https://www.ikt4you.eu/be-active/weblinks/wollmilchsau"
+  },
+  {
+    "kategorie": "5. KI / EU AI Act",
+    "titel": "KI – Das kleine 1x1 für Lehrer – ikt4you",
+    "beschreibung": "Generative KI im Schulalltag – Bestandsaufnahme und Vision",
+    "url": "https://www.ikt4you.eu/be-active/tutorials/lehrer-ki"
+  },
+  {
+    "kategorie": "5. KI / EU AI Act",
+    "titel": "Kreativität im Kontext KI – eBildungslabor",
+    "beschreibung": "Kreativität und Mensch-Maschine-Interaktion mit KI",
+    "url": "https://ebildungslabor.de/blog/kreativitaet-im-kontext-kuenstlicher-intelligenz/"
+  },
+  {
+    "kategorie": "5. KI / EU AI Act",
+    "titel": "Prompt Engineering – ikt4you",
+    "beschreibung": "Tutorial: Bessere Ergebnisse durch präzise KI-Prompts",
+    "url": "https://www.ikt4you.eu/be-active/tutorials/promt-engineering"
+  },
+  {
+    "kategorie": "5. KI / EU AI Act",
+    "titel": "Copilot Challenge Austria 2026",
+    "beschreibung": "Österreichische Copilot Challenge für die Sekundarstufe II",
+    "url": "https://talentslounge.com/copilot-challenge-austria-2026/"
+  },
+  {
+    "kategorie": "5. KI / EU AI Act",
+    "titel": "KI-Tool & Transfer Tuesday – KI-Campus",
+    "beschreibung": "Regelmäßige Webinare (Zoom) zu KI-Tools für Lehrkräfte",
+    "url": "https://ki-campus.org/tool-and-transfer-tuesday"
+  },
+  {
+    "kategorie": "5. KI / EU AI Act",
+    "titel": "KI-Tools für wiss. Arbeiten – Uni Duisburg",
+    "beschreibung": "KI-Tools für Literaturrecherche und wissenschaftliches Schreiben",
+    "url": "https://www.uni-due.de/ub/ki-tools.php"
+  },
+  {
+    "kategorie": "5. KI / EU AI Act",
+    "titel": "Generatives KI-Team – ikt4you",
+    "beschreibung": "Tutorials zur digitalen Teamarbeit und generativer KI",
+    "url": "https://www.ikt4you.eu/be-active/tutorials/digitales-team"
+  },
+  {
+    "kategorie": "5. KI / EU AI Act",
+    "titel": "KI-Tools 2025 – ikt4you",
+    "beschreibung": "Aktuelle Hitparade der besten KI-Werkzeuge für Bildung",
+    "url": "https://ikt4you.eu/be-active/apps/ki-tools-2025"
+  },
+  {
+    "kategorie": "5. KI / EU AI Act",
+    "titel": "KI-Bilder & Videos erkennen – ikt4you",
+    "beschreibung": "Erkennung von KI-generierten Bildern und Deepfakes",
+    "url": "https://ikt4you.eu/be-active/weblinks/ki-bilder-videos-erkennen"
+  },
+  {
+    "kategorie": "5. KI / EU AI Act",
+    "titel": "Bilder-Rückwärtssuche – CHIP",
+    "beschreibung": "Anleitung zur Google-Rückwärtssuche für Bildüberprüfung",
+    "url": "https://www.chip.de/ratgeber/wifi-dsl-internet/bilder-per-rueckwaertssuche-finden_e6278081.html"
+  },
+  {
+    "kategorie": "6. KI-Tools für Lehrkräfte",
+    "titel": "MagicSchool AI",
+    "beschreibung": "KI-Plattform zur Unterrichtsplanung, kostenloser Basiszugang",
+    "url": "https://www.magicschool.ai/"
+  },
+  {
+    "kategorie": "6. KI-Tools für Lehrkräfte",
+    "titel": "myTAI",
+    "beschreibung": "KI-Tool: Thema eingeben → Stundenbilder, HÜ, Prüfungsfragen sofort",
+    "url": "https://www.mytai.net/"
+  },
+  {
+    "kategorie": "6. KI-Tools für Lehrkräfte",
+    "titel": "Microsoft Reading Coach",
+    "beschreibung": "KI-gestützte Leseförderung für Schüler/innen (Microsoft)",
+    "url": "https://coach.microsoft.com/de-de"
+  },
+  {
+    "kategorie": "6. KI-Tools für Lehrkräfte",
+    "titel": "aTrain – Sprach-Transkription",
+    "beschreibung": "Lokales KI-Tool zur automatischen Transkription ohne Cloud-Upload",
+    "url": "https://apps.microsoft.com/detail/9n15q44szns2"
+  },
+  {
+    "kategorie": "6. KI-Tools für Lehrkräfte",
+    "titel": "NotebookLM (Google)",
+    "beschreibung": "KI-Notiz- und Recherche-Tool: Gespräche mit eigenen Dokumenten",
+    "url": "https://notebooklm.google.com/"
+  },
+  {
+    "kategorie": "6. KI-Tools für Lehrkräfte",
+    "titel": "Gemini (Google)",
+    "beschreibung": "Google-KI-Assistent mit persönlichem Gedächtnis und Dateiexport",
+    "url": "https://gemini.google.com/?hl=de"
+  },
+  {
+    "kategorie": "6. KI-Tools für Lehrkräfte",
+    "titel": "Gemini – Bildgenerierung (Nano Banana)",
+    "beschreibung": "Google KI-Bildgenerierung – Nano Banana / Gemini 2.5 Flash Image",
+    "url": "https://gemini.google/de/overview/image-generation/?hl=de-DE"
+  },
+  {
+    "kategorie": "6. KI-Tools für Lehrkräfte",
+    "titel": "Gemini Storybook (NEU)",
+    "beschreibung": "Personalisierte, illustrierte Geschichten zu jedem Thema mit Vorlesefunktion",
+    "url": "https://gemini.google/overview/storybook/"
+  },
+  {
+    "kategorie": "6. KI-Tools für Lehrkräfte",
+    "titel": "Nano Banana – ikt4you",
+    "beschreibung": "Erklärung und Tipp zu Googles Nano Banana / Bildgenerierung",
+    "url": "https://www.ikt4you.eu/be-active/apps/nano-banana"
+  },
+  {
+    "kategorie": "6. KI-Tools für Lehrkräfte",
+    "titel": "Google Maps mit KI Update – ikt4you",
+    "beschreibung": "Neue KI-Features in Google Maps (Gemini-Integration in Österreich)",
+    "url": "https://www.ikt4you.eu/be-active/apps/google-maps-ki"
+  },
+  {
+    "kategorie": "6. KI-Tools für Lehrkräfte",
+    "titel": "KIKI – ikt4you (NEU)",
+    "beschreibung": "'Kikisieren' statt Googeln: KI-gestützte Suche für den Unterricht erklärt",
+    "url": "https://www.ikt4you.eu/be-active/weblinks/google-kiki"
+  },
+  {
+    "kategorie": "6. KI-Tools für Lehrkräfte",
+    "titel": "SlidesGPT",
+    "beschreibung": "KI-Tool zur automatischen Erstellung von Präsentationen",
+    "url": "https://slidesgpt.com/"
+  },
+  {
+    "kategorie": "6. KI-Tools für Lehrkräfte",
+    "titel": "Napkin AI",
+    "beschreibung": "KI-Tool zur Illustration und Visualisierung von Texten",
+    "url": "https://www.napkin.ai/"
+  },
+  {
+    "kategorie": "6. KI-Tools für Lehrkräfte",
+    "titel": "DUCK AI",
+    "beschreibung": "Datenschutzfreundlicher KI-Assistent von DuckDuckGo",
+    "url": "https://duck.ai/"
+  },
+  {
+    "kategorie": "6. KI-Tools für Lehrkräfte",
+    "titel": "Lumo by Proton – KI-Assistent",
+    "beschreibung": "Datenschutzfreundlicher KI-Assistent von Proton (Zero-Access-Verschlüsselung)",
+    "url": "https://lumo.proton.me/guest"
+  },
+  {
+    "kategorie": "6. KI-Tools für Lehrkräfte",
+    "titel": "Agent Zero",
+    "beschreibung": "Open-Source-KI-Agent für autonome Aufgabenbearbeitung (lokal/Docker)",
+    "url": "https://www.agent-zero.ai/#hero"
+  },
+  {
+    "kategorie": "6. KI-Tools für Lehrkräfte",
+    "titel": "Agent Zero – ikt4you",
+    "beschreibung": "Erklärung und Tipp zu Agent Zero auf ikt4you",
+    "url": "https://www.ikt4you.eu/be-active/apps/agent-zero"
+  },
+  {
+    "kategorie": "6. KI-Tools für Lehrkräfte",
+    "titel": "Bewegte Bilder mit KI – ikt4you",
+    "beschreibung": "Anleitungen zur KI-gestützten Animation für den Unterricht",
+    "url": "https://www.ikt4you.eu/be-active/apps/bewegte-bilder"
+  },
+  {
+    "kategorie": "6. KI-Tools für Lehrkräfte",
+    "titel": "KI – Zeichnungen animieren (Meta)",
+    "beschreibung": "Meta-Tool: Einfache Zeichnungen animieren lassen",
+    "url": "https://sketch.metademolab.com/canvas"
+  },
+  {
+    "kategorie": "6. KI-Tools für Lehrkräfte",
+    "titel": "Spiele im Unterricht mit Claude – Blog",
+    "beschreibung": "10 Ideen für interaktive Lernspiele mit Claude 3.5 Sonnet erstellen",
+    "url": "https://www.manuelflick.de/blog/so-erstellst-du-spiele-fr-den-unterricht-mit-claude-35-sonnet"
+  },
+  {
+    "kategorie": "6. KI-Tools für Lehrkräfte",
+    "titel": "Google Übersetzer – Sprachkurse (YouTube)",
+    "beschreibung": "Video: Google Übersetzer bietet KI-gestützte Sprachkurse",
+    "url": "https://www.youtube.com/shorts/2xfhC9EmAJ8"
+  },
+  {
+    "kategorie": "6. KI-Tools für Lehrkräfte",
+    "titel": "Google Übersetzer Sprachkurse – CHIP",
+    "beschreibung": "CHIP-Artikel zum neuen Sprachkurs-Feature von Google Übersetzer",
+    "url": "https://www.chip.de/news/software/duolingo-bekommt-konkurrenz-google-uebersetzer-bietet-jetzt-sprachkurse-an.html"
+  },
+  {
+    "kategorie": "6. KI-Tools für Lehrkräfte",
+    "titel": "Learn Your Way (Google)",
+    "beschreibung": "Google-Lernplattform mit personalisierten KI-Kursen",
+    "url": "https://learnyourway.withgoogle.com/"
+  },
+  {
+    "kategorie": "6. KI-Tools für Lehrkräfte",
+    "titel": "Learn Your Way – ikt4you Tipp",
+    "beschreibung": "ikt4you-Tipp zur Google-Lernplattform Learn Your Way",
+    "url": "https://www.ikt4you.eu/be-active/apps/learn-my-way"
+  },
+  {
+    "kategorie": "6. KI-Tools für Lehrkräfte",
+    "titel": "NotebookLM – ikt4you Tipp",
+    "beschreibung": "Tipp und Erklärung zu NotebookLM auf ikt4you",
+    "url": "https://www.ikt4you.eu/be-active/apps/notbooklm"
+  },
+  {
+    "kategorie": "6. KI-Tools für Lehrkräfte",
+    "titel": "Foocus AI – ikt4you",
+    "beschreibung": "Open-Source-Bildgenerierungs-KI, vorgestellt auf ikt4you",
+    "url": "https://www.ikt4you.eu/be-active/apps/foocus-ai"
+  },
+  {
+    "kategorie": "6. KI-Tools für Lehrkräfte",
+    "titel": "KI-Lernstrecke – Eduvidual",
+    "beschreibung": "5-modulige KI-Lernstrecke mit Zertifikat (je ca. 1 UE)",
+    "url": "https://www.eduvidual.at/course/view.php?id=212911"
+  },
+  {
+    "kategorie": "6. KI-Tools für Lehrkräfte",
+    "titel": "Padlet EduDays – Chatbots im Unterricht (NEU)",
+    "beschreibung": "Materialen der PH NÖ EduDays: cAIas als Unterrichtsbegleiter erstellen",
+    "url": "https://padlet.com/phnoe/edudays-lernen-mit-gen-ki-chatbots-fur-den-unterricht-erstel-2j05nf5vjykk7zqoc"
+  },
+  {
+    "kategorie": "7. Open Source & Linux Bildung",
+    "titel": "Linux Bildung – Hauptseite",
+    "beschreibung": "Österreichische Initiative für Linux und Open Source im Bildungsbereich",
+    "url": "https://linux-bildung.at"
+  },
+  {
+    "kategorie": "7. Open Source & Linux Bildung",
+    "titel": "Linux Bildung – Webinar Digitale Souveränität",
+    "beschreibung": "Webinar-Aufzeichnung zur Digitalen Souveränität (März 2026)",
+    "url": "https://linux-bildung.at/2026/03/webinar-digitale-souveraenitaet/"
+  },
+  {
+    "kategorie": "7. Open Source & Linux Bildung",
+    "titel": "Linux Bildung – Empfehlungsecke",
+    "beschreibung": "Kuratierte Open-Source-Software-Empfehlungen für Schulen",
+    "url": "https://linux-bildung.at/empfehlungsecke/"
+  },
+  {
+    "kategorie": "7. Open Source & Linux Bildung",
+    "titel": "Linux Bildung – Software",
+    "beschreibung": "Beiträge zu Open-Source-Software auf linux-bildung.at",
+    "url": "https://linux-bildung.at/category/software/"
+  },
+  {
+    "kategorie": "7. Open Source & Linux Bildung",
+    "titel": "Linux Bildung – HowTo",
+    "beschreibung": "Anleitungen und How-Tos auf linux-bildung.at",
+    "url": "https://linux-bildung.at/category/howto/"
+  },
+  {
+    "kategorie": "7. Open Source & Linux Bildung",
+    "titel": "Linux Bildung – Hardware",
+    "beschreibung": "Hardware-Empfehlungen und Tests auf linux-bildung.at",
+    "url": "https://linux-bildung.at/category/hardware/"
+  },
+  {
+    "kategorie": "7. Open Source & Linux Bildung",
+    "titel": "Digitale Souveränität – bmlink 1",
+    "beschreibung": "Kurzlink zu Ressourcen rund um Digitale Souveränität",
+    "url": "https://bmlink.at/tBTcI"
+  },
+  {
+    "kategorie": "7. Open Source & Linux Bildung",
+    "titel": "Digitale Souveränität – bmlink 2",
+    "beschreibung": "Weiterer Kurzlink zu Ressourcen rund um Digitale Souveränität",
+    "url": "https://bmlink.at/EE8yf"
+  },
+  {
+    "kategorie": "7. Open Source & Linux Bildung",
+    "titel": "AnduinOS – Download (CHIP)",
+    "beschreibung": "Einsteigerfreundliche Linux-Distribution mit Windows-11-ähnlicher Oberfläche",
+    "url": "https://www.chip.de/downloads/AnduinOS_186120356.html"
+  },
+  {
+    "kategorie": "7. Open Source & Linux Bildung",
+    "titel": "Schweizer Lernstick (BFH)",
+    "beschreibung": "Sichere Lernumgebung auf USB-Stick – startet auf nahezu jedem PC",
+    "url": "https://www.bfh.ch/de/forschung/forschungsbereiche/lernstick/"
+  },
+  {
+    "kategorie": "7. Open Source & Linux Bildung",
+    "titel": "KiCad – Open Source EDA (CHIP)",
+    "beschreibung": "Open-Source-Tool für Elektronik-Schaltplanung und Leiterplattendesign",
+    "url": "https://www.chip.de/downloads/KiCad_185217913.html"
+  },
+  {
+    "kategorie": "7. Open Source & Linux Bildung",
+    "titel": "Sniffnet – Netzwerk-Monitor (CHIP)",
+    "beschreibung": "Open-Source-Tool zur Überwachung des eigenen Netzwerkverkehrs",
+    "url": "https://www.chip.de/downloads/Sniffnet_184800941.html"
+  },
+  {
+    "kategorie": "7. Open Source & Linux Bildung",
+    "titel": "Proton – Datenschutz-Suite",
+    "beschreibung": "Datenschutzfreundliche E-Mail-, VPN- und Cloud-Lösung aus der Schweiz",
+    "url": "https://proton.me/de"
+  },
+  {
+    "kategorie": "7. Open Source & Linux Bildung",
+    "titel": "CryptPad (NEU)",
+    "beschreibung": "Durchgängig verschlüsselte, quelloffene Collaboration-Suite (Dokumente, Sheets, etc.)",
+    "url": "https://cryptpad.fr/"
+  },
+  {
+    "kategorie": "7. Open Source & Linux Bildung",
+    "titel": "Qwant (NEU)",
+    "beschreibung": "Datenschutzfreundliche Suchmaschine – kein Speichern des Suchverlaufs",
+    "url": "https://www.qwant.com/"
+  },
+  {
+    "kategorie": "7. Open Source & Linux Bildung",
+    "titel": "Brave Browser (NEU)",
+    "beschreibung": "Datenschutzfokussierter Browser – blockiert Tracking und Werbung standardmäßig",
+    "url": "https://brave.com/"
+  },
+  {
+    "kategorie": "7. Open Source & Linux Bildung",
+    "titel": "FreeTube (NEU)",
+    "beschreibung": "Datenschutzfreundlicher YouTube-Client für Windows/Mac/Linux – kein Tracking",
+    "url": "https://freetubeapp.io/"
+  },
+  {
+    "kategorie": "8. Makerspace & Making",
+    "titel": "EIS PH NÖ – Making-Ressourcen",
+    "beschreibung": "Makerspace-Ressourcen und Materialien der PH Niederösterreich",
+    "url": "https://eis.ph-noe.ac.at/making/"
+  },
+  {
+    "kategorie": "8. Makerspace & Making",
+    "titel": "Apps programmieren – ikt4you",
+    "beschreibung": "Anleitungen zur App-Programmierung im Unterricht",
+    "url": "https://www.ikt4you.eu/be-active/apps/apps-programmieren"
+  },
+  {
+    "kategorie": "8. Makerspace & Making",
+    "titel": "Stop Motion – ikt4you Tutorial",
+    "beschreibung": "Schritt-für-Schritt-Anleitung zur Stop-Motion-Technik im Unterricht",
+    "url": "https://www.ikt4you.eu/be-active/tutorials/stop-motion"
+  },
+  {
+    "kategorie": "8. Makerspace & Making",
+    "titel": "Minecraft Education (NEU)",
+    "beschreibung": "Bildungsversion von Minecraft (Microsoft) – kostenlos mit Microsoft 365 Education",
+    "url": "https://education.minecraft.net/de-de"
+  },
+  {
+    "kategorie": "8. Makerspace & Making",
+    "titel": "Hour of AI – Minecraft Education (NEU)",
+    "beschreibung": "Minecraft Education Lerneinheit: 'Hour of AI – The First Night'",
+    "url": "https://education.minecraft.net/de-de/lessons/hour-of-ai-the-first-night"
+  },
+  {
+    "kategorie": "8. Makerspace & Making",
+    "titel": "Minecraft Unterlagen – Google Drive (NEU)",
+    "beschreibung": "Unterlagen und Materialien zu Minecraft Education für den Unterricht",
+    "url": "https://drive.google.com/drive/folders/1-h8MiExz5mD5cDcO0KqtXDpYCC24Sj05?usp=sharing"
+  },
+  {
+    "kategorie": "8. Makerspace & Making",
+    "titel": "Sammlung Bachinger – BAA EduMenu (NEU)",
+    "beschreibung": "Kostenlose Programme für den Unterricht – Sammlung Bachinger (Digi.case, Edupuzzle, etc.)",
+    "url": "https://baa.at/projekte/edumenu/start/startbaa.html"
+  },
+  {
+    "kategorie": "8. Makerspace & Making",
+    "titel": "Canva for Education (NEU)",
+    "beschreibung": "Canva Pro kostenlos für alle Lehrer/innen und Schüler/innen der Schule",
+    "url": "https://www.canva.com/de_de/bildung/"
+  },
+  {
+    "kategorie": "8. Makerspace & Making",
+    "titel": "Grusel Memory – Satzglieder (NEU)",
+    "beschreibung": "Canva-basiertes interaktives Spiel zur Übung von Satzgliedern",
+    "url": "https://grusel-memory.my.canva.site/satzglieder"
+  },
+  {
+    "kategorie": "9. DGB-Tools & nützliche Websites",
+    "titel": "IDs und Nummern – ikt4you",
+    "beschreibung": "Digitale Kennungen erklärt: MAC, IP, ISBN, IBAN",
+    "url": "https://www.ikt4you.eu/be-active/weblinks/einzigartig-digital"
+  },
+  {
+    "kategorie": "9. DGB-Tools & nützliche Websites",
+    "titel": "VPN – Der digitale Tunnel – ikt4you",
+    "beschreibung": "VPN erklärt: Sicheres und anonymes Surfen im Internet",
+    "url": "https://www.ikt4you.eu/be-active/weblinks/vpn"
+  },
+  {
+    "kategorie": "9. DGB-Tools & nützliche Websites",
+    "titel": "Software-Lizenzen – ikt4you",
+    "beschreibung": "Freeware, Shareware, Open Source und Public Domain im Vergleich",
+    "url": "https://www.ikt4you.eu/be-active/weblinks/software-lizenzen"
+  },
+  {
+    "kategorie": "9. DGB-Tools & nützliche Websites",
+    "titel": "JPEG vs. AVIF – ikt4you",
+    "beschreibung": "Vergleich zwischen JPEG und modernem AVIF-Bildformat",
+    "url": "https://ikt4you.eu/be-active/weblinks/jpg-avif"
+  },
+  {
+    "kategorie": "9. DGB-Tools & nützliche Websites",
+    "titel": "Lehrer-Online – OER-Suchportal",
+    "beschreibung": "Suchportal für Open Educational Resources",
+    "url": "https://www.lehrer-online.de/suche/"
+  },
+  {
+    "kategorie": "9. DGB-Tools & nützliche Websites",
+    "titel": "NoLoginTools",
+    "beschreibung": "Online-Tools ohne Registrierung oder Login",
+    "url": "https://nologintool.com/"
+  },
+  {
+    "kategorie": "9. DGB-Tools & nützliche Websites",
+    "titel": "Submarine Cable Map",
+    "beschreibung": "Interaktive Karte aller Unterseekabel weltweit (TeleGeography)",
+    "url": "https://www.submarinecablemap.com/"
+  },
+  {
+    "kategorie": "9. DGB-Tools & nützliche Websites",
+    "titel": "Old Maps Online",
+    "beschreibung": "Historische Karten mit Zeitschieber – ideal für GW und GS",
+    "url": "https://www.oldmapsonline.org/de#position=6/48.306/14.286"
+  },
+  {
+    "kategorie": "9. DGB-Tools & nützliche Websites",
+    "titel": "The True Size",
+    "beschreibung": "Ländergrößen maßstabsgetreu vergleichen (keine Mercator-Verzerrung)",
+    "url": "https://thetruesize.com/"
+  },
+  {
+    "kategorie": "9. DGB-Tools & nützliche Websites",
+    "titel": "Statistik Austria – Schulatlas",
+    "beschreibung": "Interaktiver Schulatlas mit Daten aller österreichischen Schulen",
+    "url": "https://www.statistik.at/atlas/schulen/"
+  },
+  {
+    "kategorie": "9. DGB-Tools & nützliche Websites",
+    "titel": "Innerbody – Anatomie Explorer",
+    "beschreibung": "Interaktiver 3D-Anatomie-Explorer für den Biologie-Unterricht",
+    "url": "https://www.innerbody.com/htm/body.html"
+  },
+  {
+    "kategorie": "9. DGB-Tools & nützliche Websites",
+    "titel": "ASCII Art Archive",
+    "beschreibung": "Sammlung von ASCII-Kunstwerken – kreative Ergänzung für Informatik",
+    "url": "https://www.asciiart.eu/"
+  },
+  {
+    "kategorie": "9. DGB-Tools & nützliche Websites",
+    "titel": "Mund der Wahrheit (FUN) – Schooltools",
+    "beschreibung": "Lustiges, interaktives Tool für die Klasse",
+    "url": "https://www.schooltools.at/2025/09/20/mund-der-wahrheit/"
+  },
+  {
+    "kategorie": "9. DGB-Tools & nützliche Websites",
+    "titel": "FREE Printable Worksheets",
+    "beschreibung": "Kostenlose druckbare Arbeitsblätter für verschiedene Fächer",
+    "url": "https://www.worksheetfun.com/"
+  },
+  {
+    "kategorie": "9. DGB-Tools & nützliche Websites",
+    "titel": "Kiddo Worksheets – VS / IF",
+    "beschreibung": "Kostenlose Arbeitsblätter für Volksschule und integrative Förderung",
+    "url": "https://www.kiddoworksheets.com/"
+  },
+  {
+    "kategorie": "9. DGB-Tools & nützliche Websites",
+    "titel": "Denken & Visualisieren – ikt4you",
+    "beschreibung": "App-Sammlung zu Denken, Recherchieren und Visualisieren",
+    "url": "https://ikt4you.eu/be-active/apps/denken-recherchieren-visualisieren"
+  },
+  {
+    "kategorie": "9. DGB-Tools & nützliche Websites",
+    "titel": "Recording-Tools – ikt4you",
+    "beschreibung": "Übersicht hilfreicher Recording-Tools für den Unterricht",
+    "url": "https://www.ikt4you.eu/be-active/apps/recording"
+  },
+  {
+    "kategorie": "9. DGB-Tools & nützliche Websites",
+    "titel": "Audiolie – Audio-Tool",
+    "beschreibung": "Audio-Tool speziell für den Schulunterricht",
+    "url": "https://www.audiolie.com/"
+  },
+  {
+    "kategorie": "9. DGB-Tools & nützliche Websites",
+    "titel": "EdTech Austria",
+    "beschreibung": "Österreichische EdTech-Community: Events, News und Vernetzung",
+    "url": "https://www.edtechaustria.at/"
+  },
+  {
+    "kategorie": "9. DGB-Tools & nützliche Websites",
+    "titel": "Lernly – österreichische Lernplattform",
+    "beschreibung": "Österreichische Lernplattform für Schüler/innen",
+    "url": "https://lernly.at/"
+  },
+  {
+    "kategorie": "9. DGB-Tools & nützliche Websites",
+    "titel": "LernArena",
+    "beschreibung": "Österreichische Lernplattform mit interaktiven Übungen",
+    "url": "https://www.lernarena.org/"
+  },
+  {
+    "kategorie": "9. DGB-Tools & nützliche Websites",
+    "titel": "Palino App",
+    "beschreibung": "Digitale Lernbegleitung und Schulorganisations-App",
+    "url": "https://www.palino.app/de"
+  },
+  {
+    "kategorie": "9. DGB-Tools & nützliche Websites",
+    "titel": "Benno School",
+    "beschreibung": "Digitale Schulplattform für Österreich",
+    "url": "https://www.benno.school/"
+  },
+  {
+    "kategorie": "9. DGB-Tools & nützliche Websites",
+    "titel": "WDR Klangkiste",
+    "beschreibung": "Interaktive Musikressource des WDR für den Musikunterricht",
+    "url": "https://klangkiste.wdr.de/#/"
+  },
+  {
+    "kategorie": "10. Deutsch & Sprachen",
+    "titel": "Elkes Sprachenkiste",
+    "beschreibung": "Deutschsprachige Ressourcen und Materialien für den Sprachunterricht",
+    "url": "https://elkessprachenkiste.at/"
+  },
+  {
+    "kategorie": "10. Deutsch & Sprachen",
+    "titel": "Languageguide.org",
+    "beschreibung": "Mehrsprachiges Lernportal mit Bildern und Audio",
+    "url": "https://www.languageguide.org/"
+  },
+  {
+    "kategorie": "10. Deutsch & Sprachen",
+    "titel": "Der Die Das – Schooltools Tipp",
+    "beschreibung": "Interaktive Übung zum Bestimmen der richtigen deutschen Artikel",
+    "url": "https://www.schooltools.at/2025/08/03/der-die-das/"
+  },
+  {
+    "kategorie": "10. Deutsch & Sprachen",
+    "titel": "Der Die Das – deutsch.info",
+    "beschreibung": "Direkte Übungsseite für die deutschen Artikel",
+    "url": "https://deutsch.info/derdiedas"
+  },
+  {
+    "kategorie": "10. Deutsch & Sprachen",
+    "titel": "Duolingo for Schools",
+    "beschreibung": "Sprachlernplattform für den schulischen Einsatz mit Lehrerbereich",
+    "url": "https://schools.duolingo.com/"
+  },
+  {
+    "kategorie": "10. Deutsch & Sprachen",
+    "titel": "Netzverb.de",
+    "beschreibung": "Deutsche Verbkonjugation und Grammatikübungen",
+    "url": "https://www.netzverb.de"
+  },
+  {
+    "kategorie": "10. Deutsch & Sprachen",
+    "titel": "Verbformen.de",
+    "beschreibung": "Konjugationstabellen für deutsche Verben",
+    "url": "https://www.verbformen.de"
+  },
+  {
+    "kategorie": "10. Deutsch & Sprachen",
+    "titel": "Verben.de",
+    "beschreibung": "Weitere Ressource zur deutschen Verbkonjugation",
+    "url": "https://www.verben.de"
+  },
+  {
+    "kategorie": "10. Deutsch & Sprachen",
+    "titel": "Sprachlehre.de",
+    "beschreibung": "Umfassende Ressource zur deutschen Grammatik und Rechtschreibung",
+    "url": "https://www.sprachlehre.de/"
+  },
+  {
+    "kategorie": "10. Deutsch & Sprachen",
+    "titel": "Sprachlehre.de – KI-Chat",
+    "beschreibung": "KI-gestützter Sprachlernassistent auf Sprachlehre.de",
+    "url": "https://www.sprachlehre.de/chat"
+  },
+  {
+    "kategorie": "10. Deutsch & Sprachen",
+    "titel": "Satzapp.de",
+    "beschreibung": "App und Website zur deutschen Satzanalyse",
+    "url": "https://www.satzapp.de"
+  },
+  {
+    "kategorie": "10. Deutsch & Sprachen",
+    "titel": "Verblisten.de",
+    "beschreibung": "Übersichtliche Listen und Übungen zu deutschen Verben",
+    "url": "https://www.verblisten.de"
+  },
+  {
+    "kategorie": "10. Deutsch & Sprachen",
+    "titel": "Konjugation.de",
+    "beschreibung": "Online-Tool zur Konjugation aller deutschen Verben",
+    "url": "http://www.konjugation.de"
+  },
+  {
+    "kategorie": "10. Deutsch & Sprachen",
+    "titel": "Netzverb Wörterbuch App",
+    "beschreibung": "Mobile App für das Netzverb-Wörterbuch (iOS & Android)",
+    "url": "https://netzverb-dictionary.app"
+  },
+  {
+    "kategorie": "10. Deutsch & Sprachen",
+    "titel": "Dandelin – Deutsch für Kinder",
+    "beschreibung": "Spielerische Deutschlern-App für Kinder (auch DaZ geeignet)",
+    "url": "https://deutsch.info/dandelin/school"
+  },
+  {
+    "kategorie": "10. Deutsch & Sprachen",
+    "titel": "Dandelin – Schooltools Tipp",
+    "beschreibung": "Schooltools-Beitrag zu Dandelin und seinem Unterrichtseinsatz",
+    "url": "https://www.schooltools.at/2023/09/12/dandelin/"
+  },
+  {
+    "kategorie": "10. Deutsch & Sprachen",
+    "titel": "Dandelin – YouTube Playlist",
+    "beschreibung": "YouTube-Playlist mit Dandelin-Videos und Lernclips",
+    "url": "https://www.youtube.com/playlist?list=PL1dAvOSp_as_8azn0qpGpu22aKWnEept9"
+  },
+  {
+    "kategorie": "10. Deutsch & Sprachen",
+    "titel": "Deutsch.info",
+    "beschreibung": "Umfassende Website zum Deutschlernen für Kinder und Anfänger",
+    "url": "https://deutsch.info/"
+  },
+  {
+    "kategorie": "10. Deutsch & Sprachen",
+    "titel": "DW Learn German",
+    "beschreibung": "Deutschlernen mit der Deutschen Welle – Anfängerniveau",
+    "url": "https://learngerman.dw.com/de/anf%C3%A4nger/s-62079021"
+  },
+  {
+    "kategorie": "11. Fachspezifische Tools",
+    "titel": "Aufgabenschmiede",
+    "beschreibung": "Österreichische Plattform für interaktive Mathematik-Aufgaben",
+    "url": "https://aufgabenschmiede.at/"
+  },
+  {
+    "kategorie": "11. Fachspezifische Tools",
+    "titel": "JavaLab – Experimente (CH & PH)",
+    "beschreibung": "Interaktive Java-Simulationen für Chemie- und Physik-Experimente",
+    "url": "https://javalab.org/en/"
+  },
+  {
+    "kategorie": "11. Fachspezifische Tools",
+    "titel": "ZPeriod – Periodensystem (Chemie)",
+    "beschreibung": "Interaktives Periodensystem der Elemente auf Deutsch",
+    "url": "https://zperiod.app/?lang=de"
+  },
+  {
+    "kategorie": "11. Fachspezifische Tools",
+    "titel": "Supercook – Rezepte (EHH)",
+    "beschreibung": "KI-gestützter Rezeptgenerator aus vorhandenen Zutaten",
+    "url": "https://www.supercook.com/#/desktop"
+  },
+  {
+    "kategorie": "11. Fachspezifische Tools",
+    "titel": "Google Maps – Web",
+    "beschreibung": "Google Maps im Browser – für Geographie und Orientierung",
+    "url": "https://www.google.com/maps"
+  },
+  {
+    "kategorie": "11. Fachspezifische Tools",
+    "titel": "Google über mich – Datenschutz (NEU)",
+    "beschreibung": "Google-Einstellungsseite zur eigenen Datenschutz-Kontrolle",
+    "url": "https://myaccount.google.com/data-and-privacy"
+  }
+]
