@@ -73,7 +73,7 @@
   },
   {
     "kategorie": "1. Ministerium & Bildungsportal",
-    "titel": "Termino – Terminverwaltung (NEU)",
+    "titel": "Termino – Terminverwaltung",
     "beschreibung": "Terminplanungs-Tool des Bundeskanzleramts für Behörden und Schulen",
     "url": "https://www.termino.gv.at/meet/"
   },
@@ -246,12 +246,6 @@
     "url": "https://canva.link/cy1ny054nk3brz1"
   },
   {
-    "kategorie": "3. Fortbildung & Verwaltung",
-    "titel": "Google Forms – Feedback",
-    "beschreibung": "Feedback-Formular zum Jour Fixe DGB 2026",
-    "url": "https://forms.gle/4MpdSubBf6Ez2GCL7"
-  },
-  {
     "kategorie": "4. Medienbildung & Sicherheit",
     "titel": "Jugend Internet Monitor 2026",
     "beschreibung": "Aktuelle Studiendaten zur Mediennutzung von Jugendlichen",
@@ -283,7 +277,7 @@
   },
   {
     "kategorie": "4. Medienbildung & Sicherheit",
-    "titel": "Stiftung Medienpädagogik Bayern (NEU)",
+    "titel": "Stiftung Medienpädagogik Bayern",
     "beschreibung": "BLM Stiftung: Projekte und Vernetzung für Medienkompetenz in Bayern",
     "url": "https://www.stiftung-medienpaedagogik-bayern.de/home"
   },
@@ -307,7 +301,7 @@
   },
   {
     "kategorie": "4. Medienbildung & Sicherheit",
-    "titel": "APA Checkbar (NEU)",
+    "titel": "APA Checkbar",
     "beschreibung": "Österreichisches Tool: Tipps und Werkzeuge zur Erkennung von Falschinformationen",
     "url": "https://apa.at/checkbar/checkbar/"
   },
@@ -385,13 +379,13 @@
   },
   {
     "kategorie": "4. Medienbildung & Sicherheit",
-    "titel": "ZDF Film: Hilfe, wir sind offline! (NEU)",
+    "titel": "ZDF Film: Hilfe, wir sind offline!",
     "beschreibung": "Filmtipp: Familie verbannt alle Geräte für einen Monat – ideal für Unterrichtsimpuls",
     "url": "https://www.zdf.de/filme/hilfe-wir-sind-offline-movie-100"
   },
   {
     "kategorie": "4. Medienbildung & Sicherheit",
-    "titel": "Google über mich – ikt4you (NEU)",
+    "titel": "Google über mich – ikt4you",
     "beschreibung": "Datenschutz & Privatsphäre: Welche Daten speichert Google über mich?",
     "url": "https://www.ikt4you.eu/be-active/weblinks/google-ueber-mich"
   },
@@ -403,25 +397,25 @@
   },
   {
     "kategorie": "4. Medienbildung & Sicherheit",
-    "titel": "Medien IF-Skript (Google Drive, NEU)",
+    "titel": "Medien IF-Skript (Google Drive)",
     "beschreibung": "Skript zur Arbeit mit Schüler/innen im IF-Bereich (Mediengeschichte)",
     "url": "https://drive.google.com/file/d/142pNu0J35PeX5FSUpLtGbxWPmjKd0zIq/view?usp=sharing"
   },
   {
     "kategorie": "4. Medienbildung & Sicherheit",
-    "titel": "Weitere Medien-Unterlagen (Google Drive, NEU)",
+    "titel": "Weitere Medien-Unterlagen (Google Drive)",
     "beschreibung": "Zusätzliche Unterlagen zur Mediengeschichte für den Unterricht",
     "url": "https://drive.google.com/file/d/1wJEtUGCnJAPoT3RcvEgNq8YY6orOez-5/view?usp=sharing"
   },
   {
     "kategorie": "4. Medienbildung & Sicherheit",
-    "titel": "Padlet EduDays PH NÖ (NEU)",
+    "titel": "Padlet EduDays PH NÖ",
     "beschreibung": "Lernen mit generativer KI: cAIas als Begleiter im Schulalltag (PH NÖ EduDays)",
     "url": "https://padlet.com/phnoe/edudays-lernen-mit-gen-ki-chatbots-fur-den-unterricht-erstel-2j05nf5vjykk7zqoc"
   },
   {
     "kategorie": "4. Medienbildung & Sicherheit",
-    "titel": "Padlet digitale Lernspiele Worgatsch (NEU)",
+    "titel": "Padlet digitale Lernspiele Worgatsch",
     "beschreibung": "KI-generierte digitale Lernspiele für Schüler/innen – frei verwendbarer Code",
     "url": "https://padlet.com/ronaldworgatsch/digitale-lernspiele-und-co-cwosr3p6dpsn7v56"
   },
@@ -559,7 +553,7 @@
   },
   {
     "kategorie": "6. KI-Tools für Lehrkräfte",
-    "titel": "Gemini Storybook (NEU)",
+    "titel": "Gemini Storybook",
     "beschreibung": "Personalisierte, illustrierte Geschichten zu jedem Thema mit Vorlesefunktion",
     "url": "https://gemini.google/overview/storybook/"
   },
@@ -577,7 +571,7 @@
   },
   {
     "kategorie": "6. KI-Tools für Lehrkräfte",
-    "titel": "KIKI – ikt4you (NEU)",
+    "titel": "KIKI – ikt4you",
     "beschreibung": "'Kikisieren' statt Googeln: KI-gestützte Suche für den Unterricht erklärt",
     "url": "https://www.ikt4you.eu/be-active/weblinks/google-kiki"
   },
@@ -679,7 +673,7 @@
   },
   {
     "kategorie": "6. KI-Tools für Lehrkräfte",
-    "titel": "Padlet EduDays – Chatbots im Unterricht (NEU)",
+    "titel": "Padlet EduDays – Chatbots im Unterricht",
     "beschreibung": "Materialen der PH NÖ EduDays: cAIas als Unterrichtsbegleiter erstellen",
     "url": "https://padlet.com/phnoe/edudays-lernen-mit-gen-ki-chatbots-fur-den-unterricht-erstel-2j05nf5vjykk7zqoc"
   },
@@ -763,25 +757,25 @@
   },
   {
     "kategorie": "7. Open Source & Linux Bildung",
-    "titel": "CryptPad (NEU)",
+    "titel": "CryptPad",
     "beschreibung": "Durchgängig verschlüsselte, quelloffene Collaboration-Suite (Dokumente, Sheets, etc.)",
     "url": "https://cryptpad.fr/"
   },
   {
     "kategorie": "7. Open Source & Linux Bildung",
-    "titel": "Qwant (NEU)",
+    "titel": "Qwant",
     "beschreibung": "Datenschutzfreundliche Suchmaschine – kein Speichern des Suchverlaufs",
     "url": "https://www.qwant.com/"
   },
   {
     "kategorie": "7. Open Source & Linux Bildung",
-    "titel": "Brave Browser (NEU)",
+    "titel": "Brave Browser",
     "beschreibung": "Datenschutzfokussierter Browser – blockiert Tracking und Werbung standardmäßig",
     "url": "https://brave.com/"
   },
   {
     "kategorie": "7. Open Source & Linux Bildung",
-    "titel": "FreeTube (NEU)",
+    "titel": "FreeTube",
     "beschreibung": "Datenschutzfreundlicher YouTube-Client für Windows/Mac/Linux – kein Tracking",
     "url": "https://freetubeapp.io/"
   },
@@ -805,37 +799,37 @@
   },
   {
     "kategorie": "8. Makerspace & Making",
-    "titel": "Minecraft Education (NEU)",
+    "titel": "Minecraft Education",
     "beschreibung": "Bildungsversion von Minecraft (Microsoft) – kostenlos mit Microsoft 365 Education",
     "url": "https://education.minecraft.net/de-de"
   },
   {
     "kategorie": "8. Makerspace & Making",
-    "titel": "Hour of AI – Minecraft Education (NEU)",
+    "titel": "Hour of AI – Minecraft Education",
     "beschreibung": "Minecraft Education Lerneinheit: 'Hour of AI – The First Night'",
     "url": "https://education.minecraft.net/de-de/lessons/hour-of-ai-the-first-night"
   },
   {
     "kategorie": "8. Makerspace & Making",
-    "titel": "Minecraft Unterlagen – Google Drive (NEU)",
-    "beschreibung": "Unterlagen und Materialien zu Minecraft Education für den Unterricht",
-    "url": "https://drive.google.com/drive/folders/1-h8MiExz5mD5cDcO0KqtXDpYCC24Sj05?usp=sharing"
+    "titel": "Minecraft Education – Materialsammlung",
+    "beschreibung": "Anleitungen, Handbücher und Steuerungs-PDFs für Minecraft Education",
+    "url": "https://drive.google.com/drive/folders/1-h8MiExz5mD5cDcO0KqtXDpYCC24Sj05"
   },
   {
     "kategorie": "8. Makerspace & Making",
-    "titel": "Sammlung Bachinger – BAA EduMenu (NEU)",
+    "titel": "Sammlung Bachinger – BAA EduMenu",
     "beschreibung": "Kostenlose Programme für den Unterricht – Sammlung Bachinger (Digi.case, Edupuzzle, etc.)",
     "url": "https://baa.at/projekte/edumenu/start/startbaa.html"
   },
   {
     "kategorie": "8. Makerspace & Making",
-    "titel": "Canva for Education (NEU)",
+    "titel": "Canva for Education",
     "beschreibung": "Canva Pro kostenlos für alle Lehrer/innen und Schüler/innen der Schule",
     "url": "https://www.canva.com/de_de/bildung/"
   },
   {
     "kategorie": "8. Makerspace & Making",
-    "titel": "Grusel Memory – Satzglieder (NEU)",
+    "titel": "Grusel Memory – Satzglieder",
     "beschreibung": "Canva-basiertes interaktives Spiel zur Übung von Satzgliedern",
     "url": "https://grusel-memory.my.canva.site/satzglieder"
   },
@@ -1129,8 +1123,44 @@
   },
   {
     "kategorie": "11. Fachspezifische Tools",
-    "titel": "Google über mich – Datenschutz (NEU)",
+    "titel": "Google über mich – Datenschutz",
     "beschreibung": "Google-Einstellungsseite zur eigenen Datenschutz-Kontrolle",
     "url": "https://myaccount.google.com/data-and-privacy"
+  },
+  {
+    "kategorie": "7. Open Source & Linux Bildung",
+    "titel": "Ubuntu – Download (CHIP)",
+    "beschreibung": "Einsteigerfreundliche Linux-Distribution – kostenloser Download via CHIP",
+    "url": "https://www.chip.de/downloads/Ubuntu_42589318.html"
+  },
+  {
+    "kategorie": "8. Makerspace & Making",
+    "titel": "LehrerWeb – Escape the School",
+    "beschreibung": "Themensammlung: Escape-Room-Ideen und Materialien für den Unterricht",
+    "url": "https://lehrerweb.wien/praxis/themensammlungen/themenseite-escape-the-school"
+  },
+  {
+    "kategorie": "8. Makerspace & Making",
+    "titel": "Innraum",
+    "beschreibung": "Kreativraum-Plattform mit Tools und Inspiration für Maker im Unterricht",
+    "url": "https://www.innraum.eu/"
+  },
+  {
+    "kategorie": "8. Makerspace & Making",
+    "titel": "TinkerCAD",
+    "beschreibung": "Kostenloses 3D-Design-Tool von Autodesk – ideal für Einsteiger im Makerspace",
+    "url": "https://www.tinkercad.com/"
+  },
+  {
+    "kategorie": "8. Makerspace & Making",
+    "titel": "Autodesk Fusion – Education",
+    "beschreibung": "Professionelles CAD/CAM-Tool kostenlos für Schulen und Bildungseinrichtungen",
+    "url": "https://www.autodesk.com/de/education/edu-software/fusion"
+  },
+  {
+    "kategorie": "6. KI-Tools für Lehrkräfte",
+    "titel": "VKKIWA",
+    "beschreibung": "Verband für KI in Weiterbildung und Arbeit – Ressourcen und Vernetzung",
+    "url": "https://www.vkkiwa.de/"
   }
 ]
