@@ -106,14 +106,24 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0.9rem 1.2rem;
+      padding: 0.9rem 1.2rem 0.9rem 1rem;
       background: #fff;
       cursor: pointer;
       user-select: none;
       border-bottom: 2px solid #e8e4dd;
+      /* Farbige linke Linie je Kategorie – wird per data-kat-index gesetzt */
+      border-left: 4px solid var(--kat-farbe, #1a3a5c);
       transition: background 0.15s;
     }
-    .kat-header:hover { background: #f0ede8; }
+    .kat-header:hover { background: #f7f5f2; }
+
+    /* Ausgegrauте Nummerierung im Kategorie-Titel */
+    .kat-nummer {
+      font-weight: 400;
+      color: #aaa;
+      margin-right: 0.35em;
+      font-size: 0.9em;
+    }
 
     .kat-header h2 {
       font-size: 1.05rem;
@@ -167,7 +177,8 @@
       border-radius: 8px;
       padding: 1rem 1.1rem;
       box-shadow: 0 1px 3px rgba(0,0,0,0.07);
-      transition: box-shadow 0.15s, transform 0.1s;
+      border-left: 3px solid transparent;
+      transition: box-shadow 0.15s, transform 0.12s, border-color 0.15s;
       text-decoration: none;
       color: inherit;
       display: flex;
@@ -177,6 +188,7 @@
     .karte:hover {
       box-shadow: 0 4px 14px rgba(0,0,0,0.13);
       transform: translateY(-2px);
+      border-left-color: var(--kat-farbe, #1a3a5c);
     }
 
     /* Karten-Titel */
@@ -195,12 +207,18 @@
       flex: 1;
     }
 
-    /* Domain-Anzeige */
+    /* Domain-Badge */
     .karte-domain {
-      font-size: 0.75rem;
-      color: #888;
-      margin-top: 0.2rem;
+      display: inline-block;
+      font-size: 0.72rem;
+      color: #666;
+      background: #f0ede8;
+      border-radius: 4px;
+      padding: 0.15rem 0.45rem;
+      margin-top: 0.25rem;
       word-break: break-all;
+      align-self: flex-start;       /* nicht volle Breite */
+      letter-spacing: 0.01em;
     }
 
     /* ── Kein-Ergebnis-Meldung ── */
@@ -266,6 +284,21 @@ function domain(url) {
   }
 }
 
+// Farbpalette für die 11 Kategorien – ruhige, harmonische Töne
+const KAT_FARBEN = [
+  '#2e7d9e', // 1 Ministerium       – Stahlblau
+  '#4a7c59', // 2 Lernplattformen   – Waldgrün
+  '#7b5ea7', // 3 Fortbildung       – Lila
+  '#c0733a', // 4 Medienbildung     – Terrakotta
+  '#3a7abf', // 5 KI / AI Act       – Kobaltblau
+  '#2a8f8f', // 6 KI-Tools          – Petrol
+  '#5c7a2e', // 7 Open Source       – Olivgrün
+  '#b05b7a', // 8 Makerspace        – Altrosa
+  '#6b5c3e', // 9 DGB-Tools         – Sandbraun
+  '#d4813a', // 10 Deutsch          – Ocker
+  '#466e8c', // 11 Fachspezifisch   – Schieferblau
+];
+
 /**
  * Baut das gesamte DOM aus dem Link-Array auf.
  * Wird einmal nach dem fetch() aufgerufen.
@@ -276,20 +309,28 @@ function aufbauen(links) {
   // Alle einzigartigen Kategorien in der Reihenfolge ihres ersten Auftretens
   const kategorien = [...new Set(links.map(l => l.kategorie))];
 
-  kategorien.forEach(kat => {
+  kategorien.forEach((kat, idx) => {
     const eintraege = links.filter(l => l.kategorie === kat);
+    const farbe = KAT_FARBEN[idx % KAT_FARBEN.length];
 
-    // Wrapper-Div für Akkordeon
+    // Wrapper-Div für Akkordeon – Farbe als CSS-Variable durchgereicht
     const div = document.createElement('div');
     div.className = 'kategorie';
     div.dataset.kat = kat;
+    div.style.setProperty('--kat-farbe', farbe);
+
+    // Kategorie-Titel splitten: "1. Foo" → <span class="kat-nummer">1.</span> Foo
+    const titelTeile = kat.match(/^(\d+\.\s*)(.+)$/);
+    const titelHtml = titelTeile
+      ? `<span class="kat-nummer">${escHtml(titelTeile[1])}</span>${escHtml(titelTeile[2])}`
+      : escHtml(kat);
 
     // Kopfzeile (klickbar)
     const header = document.createElement('div');
     header.className = 'kat-header';
     header.innerHTML = `
-      <h2>${escHtml(kat)}</h2>
-      <span style="display:flex;align-items:center;gap:0">
+      <h2>${titelHtml}</h2>
+      <span style="display:flex;align-items:center;gap:0.4rem">
         <span class="kat-count">${eintraege.length}</span>
         <span class="kat-arrow">▼</span>
       </span>
